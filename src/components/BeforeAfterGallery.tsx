@@ -33,11 +33,8 @@ export default function BeforeAfterGallery() {
                 <p className="text-xs uppercase tracking-[0.3em] text-amber-200">
                   {t(item.ageLabel)} · {t(item.durationLabel)}
                 </p>
-                <p className="text-sm text-white leading-snug">
-                  {(() => {
-                    const quote = t(item.quote)
-                    return quote.length > 60 ? `${quote.slice(0, 60)}…` : quote
-                  })()}
+                <p className="text-sm text-white leading-snug line-clamp-3">
+                  {t(item.quote)}
                 </p>
               </div>
 

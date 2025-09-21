@@ -6,7 +6,6 @@ import Hero from '@/components/Hero'
 import HeroContent from '@/components/HeroContent'
 import ProjectOverview from '@/components/ProjectOverview'
 import IndustryApproach from '@/components/IndustryApproach'
-import Ingredients from '@/components/Ingredients'
 import EffectsExplainer from '@/components/EffectsExplainer'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ProductLineup from '@/components/ProductLineup'
@@ -36,7 +35,6 @@ export default function Home() {
         <HeroContent />
         <ProjectOverview />
         <IndustryApproach />
-        <Ingredients />
         <EffectsExplainer />
         <BeforeAfterGallery />
         <ProductLineup />

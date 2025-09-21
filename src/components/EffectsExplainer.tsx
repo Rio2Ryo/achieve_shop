@@ -59,45 +59,6 @@ const scenarios: Scenario[] = [
       EN: 'Glide for ten seconds to look composed—your daytime essential.'
     }
   },
-  {
-    id: 'night-tone',
-    headline: {
-      JP: '就寝前の「すっぴん」もトーンアップでナチュラルに',
-      EN: 'Tone Up Bare Skin Before Bed'
-    },
-    beforeTitle: {
-      JP: 'シワや毛穴がある状態',
-      EN: 'Fine Lines & Pores Visible'
-    },
-    afterTitle: {
-      JP: 'マザベジパウダー塗布後',
-      EN: 'After Mother Veggie Powder'
-    },
-    beforeImage: '/doc3.jpg',
-    beforeDetail: '/doc4.jpg',
-    afterImage: '/doc2.jpg',
-    afterDetail: '/doc2-b.jpg',
-    beforeDescription: {
-      JP: '就寝前のすっぴんはシワや毛穴が目立ち、肌の凹凸が陰になりがちです。',
-      EN: 'Bare skin before sleep often shows fine lines and pores as shadows.'
-    },
-    beforeRisk: {
-      JP: 'ファンデーションを重ねると乾燥して割れることもあるため、寝る前は使いづらい。',
-      EN: 'Layering foundation can crack as it dries, making it unsuitable before sleep.'
-    },
-    afterDescription: {
-      JP: 'マザベジパウダーは凹凸に寄り添いながら光をやわらかく散らし、素肌をほんのり明るく見せます。',
-      EN: 'Mother Veggie Powder settles into texture, diffuses light softly, and lifts bare-skin brightness.'
-    },
-    afterBenefit: {
-      JP: '寝ている間も気になる部分をカバーしつつ清潔な肌をキープ。マスクや長時間ケアが必要な現場でも使えます。',
-      EN: 'It covers concern areas while keeping skin fresh through the night—ideal for long shifts or mask wear.'
-    },
-    footer: {
-      JP: '就寝前だけでなく、メイクができない医療・介護現場でも活躍。24時間いつでも頼れる存在です。',
-      EN: 'Trusted for bedtime and makeup-free settings like medical or caregiving work—reliable around the clock.'
-    }
-  }
 ]
 
 export default function EffectsExplainer() {
@@ -110,7 +71,7 @@ export default function EffectsExplainer() {
           {scenarios.map((scenario) => (
             <article
               key={scenario.id}
-              className="rounded-[32px] border border-white/10 bg-white/[0.04] p-8 md:p-12 text-gray-900"
+              className="rounded-[32px] border border-white/10 bg-white/[0.04] p-8 md:p-12 text-white"
             >
               <h3 className="text-center text-xl md:text-2xl font-semibold text-amber-300 mb-8">
                 {t(scenario.headline)}
@@ -118,35 +79,35 @@ export default function EffectsExplainer() {
 
               <div className="grid gap-10 md:grid-cols-2">
                 <div className="space-y-6">
-                  <h4 className="text-lg font-semibold text-gray-900 text-center md:text-left">
+                  <h4 className="text-lg font-semibold text-white text-center md:text-left">
                     {t(scenario.beforeTitle)}
                   </h4>
                   <div className="space-y-4">
-                    <Image src={scenario.beforeImage} alt={scenario.beforeTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
-                    <Image src={scenario.beforeDetail} alt={scenario.beforeTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
+                    <Image src={scenario.beforeImage} alt={scenario.beforeTitle.JP} width={300} height={200} className="w-full rounded-2xl" />
+                    <Image src={scenario.beforeDetail} alt={scenario.beforeTitle.JP} width={300} height={200} className="w-full rounded-2xl" />
                   </div>
-                  <div className="space-y-3 text-sm text-gray-800">
+                  <div className="space-y-3 text-sm text-gray-300">
                     <p>{t(scenario.beforeDescription)}</p>
                     <p className="font-semibold">{t(scenario.beforeRisk)}</p>
                   </div>
                 </div>
 
                 <div className="space-y-6">
-                  <h4 className="text-lg font-semibold text-gray-900 text-center md:text-left">
+                  <h4 className="text-lg font-semibold text-white text-center md:text-left">
                     {t(scenario.afterTitle)}
                   </h4>
                   <div className="space-y-4">
-                    <Image src={scenario.afterImage} alt={scenario.afterTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
-                    <Image src={scenario.afterDetail} alt={scenario.afterTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
+                    <Image src={scenario.afterImage} alt={scenario.afterTitle.JP} width={300} height={200} className="w-full rounded-2xl" />
+                    <Image src={scenario.afterDetail} alt={scenario.afterTitle.JP} width={300} height={200} className="w-full rounded-2xl" />
                   </div>
-                  <div className="space-y-3 text-sm text-gray-800">
+                  <div className="space-y-3 text-sm text-gray-300">
                     <p>{t(scenario.afterDescription)}</p>
                     <p className="font-semibold">{t(scenario.afterBenefit)}</p>
                   </div>
                 </div>
               </div>
 
-              <p className="mt-10 text-center text-base font-semibold text-gray-900">
+              <p className="mt-10 text-center text-base font-semibold text-white">
                 {t(scenario.footer)}
               </p>
             </article>
