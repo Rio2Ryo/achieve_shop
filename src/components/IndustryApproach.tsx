@@ -1,185 +1,84 @@
 'use client'
 
+import { HiOutlineLightningBolt, HiOutlineShieldCheck, HiOutlineSun } from 'react-icons/hi'
 import { useLanguage } from '@/contexts/LanguageContext'
+
+const iconClasses = 'text-emerald-300 text-3xl md:text-4xl'
 
 export default function IndustryApproach() {
   const { t } = useLanguage()
-  const industries = [
+
+  const features = [
     {
-      id: 1,
-      title: t({ JP: "食品分野", EN: "Food Sector" }),
-      subtitle: t({ JP: "生命力の向上", EN: "Enhancing Vitality" }),
+      title: t({ JP: '朝の5秒で完成', EN: 'Ready in 5 Seconds' }),
+      subtitle: t({
+        JP: '忙しい朝でもプロの仕上がり',
+        EN: 'Professional results even on busy mornings'
+      }),
       description: t({
-        JP: "人間の必須栄養素を多く含んだ高栄養スーパーフードにより人類の栄養状態を根本から改善します。",
-        EN: "Fundamentally improving human nutrition through nutrient-dense superfoods rich in essential nutrients."
+        JP: 'ひと塗りで均一に広がり、毛穴や凹凸をぼかして陶器肌に。テクニック不要で、美しい仕上がりが瞬時に完成します。',
+        EN: 'Glides on evenly in one sweep, blurring pores and texture for a porcelain finish without requiring special technique.'
       }),
-      details: t({
-        JP: "機能性食品原材料は病気予防と健康寿命の延伸に貢献します。",
-        EN: "Functional food ingredients contribute to disease prevention and extending healthy life expectancy."
-      }),
-      icon: "🌱",
-      color: "emerald"
+      icon: <HiOutlineLightningBolt className={iconClasses} />
     },
     {
-      id: 2,
-      title: t({ JP: "医薬品分野", EN: "Pharmaceutical Sector" }),
-      subtitle: t({ JP: "自然治癒力の支援", EN: "Supporting Natural Healing" }),
+      title: t({ JP: '24時間崩れない', EN: 'Stays Beautiful for 24 Hours' }),
+      subtitle: t({
+        JP: '汗や皮脂に負けない密着力',
+        EN: 'Adhesion that resists sweat and sebum'
+      }),
       description: t({
-        JP: "フィコシアニン、フコイダン、アスタキサンチン、EPA・DHAなどの天然由来の治療成分を生産します。",
-        EN: "Producing naturally-derived therapeutic compounds such as phycocyanin, fucoidan, astaxanthin, EPA and DHA."
+        JP: '独自の密着技術で長時間キープ。マスクや湿度の高い環境でも崩れにくく、朝の仕上がりを夜まで保ちます。',
+        EN: 'Our exclusive binding technology holds makeup in place through masks and humidity, keeping your morning finish until night.'
       }),
-      details: t({
-        JP: "副作用の少ない治療薬により、身体に負担をかけない医療の実現を目指します。",
-        EN: "Aiming to realize medicine that doesn't burden the body through treatments with minimal side effects."
-      }),
-      icon: "🛡️",
-      color: "blue"
+      icon: <HiOutlineSun className={iconClasses} />
     },
     {
-      id: 3,
-      title: t({ JP: "工業品分野", EN: "Industrial Products" }),
-      subtitle: t({ JP: "地球に優しい製造", EN: "Earth-Friendly Manufacturing" }),
+      title: t({ JP: '肌に優しい', EN: 'Skin-Friendly Care' }),
+      subtitle: t({
+        JP: '医薬部外品原料規格をクリア',
+        EN: 'Formulated to quasi-drug standards'
+      }),
       description: t({
-        JP: "バイオプラスチックや新素材の開発により石油依存からの脱却を実現します。",
-        EN: "Achieving independence from petroleum through development of bioplastics and new materials."
+        JP: '天然由来のマザーベジタブル成分が肌を守り、敏感肌でも安心。スキンケアとメイクを同時に叶えます。',
+        EN: 'Naturally-derived Mother Vegetable ingredients defend skin, making it safe even for sensitive types while delivering skincare benefits.'
       }),
-      details: t({
-        JP: "持続可能な化学原料により環境負荷ゼロの工業製品を生産します。",
-        EN: "Producing zero environmental impact industrial products using sustainable chemical raw materials."
-      }),
-      icon: "🔧",
-      color: "purple"
-    },
-    {
-      id: 4,
-      title: t({ JP: "養殖分野", EN: "Aquaculture Sector" }),
-      subtitle: t({ JP: "海洋環境の回復", EN: "Ocean Environment Recovery" }),
-      description: t({
-        JP: "水質浄化システムにより汚染された水域の自然回復を促進します。",
-        EN: "Promoting natural recovery of polluted waters through water purification systems."
-      }),
-      details: t({
-        JP: "天然飼料により化学飼料に依存しない健康的な養殖を実現します。",
-        EN: "Achieving healthy aquaculture independent of chemical feeds through natural feed."
-      }),
-      icon: "🌊",
-      color: "cyan"
-    },
-    {
-      id: 5,
-      title: t({ JP: "農業分野", EN: "Agriculture Sector" }),
-      subtitle: t({ JP: "土壌の再生", EN: "Soil Regeneration" }),
-      description: t({
-        JP: "バイオスティミュラントにより化学肥料を使わない豊かな土壌作りを推進します。",
-        EN: "Promoting rich soil creation without chemical fertilizers through biostimulants."
-      }),
-      details: t({
-        JP: "土壌改良剤により疲弊した大地の自然回復力を向上させます。",
-        EN: "Enhancing natural recovery of exhausted land through soil improvement agents."
-      }),
-      icon: "🌾",
-      color: "yellow"
-    },
-    {
-      id: 6,
-      title: t({ JP: "バイオマス分野", EN: "Biomass Sector" }),
-      subtitle: t({ JP: "クリーンエネルギー", EN: "Clean Energy" }),
-      description: t({
-        JP: "バイオディーゼル、バイオエタノール、バイオガスの生産により化石燃料からの完全脱却を目指します。",
-        EN: "Aiming for complete independence from fossil fuels through production of biodiesel, bioethanol, and biogas."
-      }),
-      details: t({
-        JP: "カーボンニュートラルによりCO₂排出量実質ゼロを実現します。",
-        EN: "Achieving net-zero CO₂ emissions through carbon neutrality."
-      }),
-      icon: "♻️",
-      color: "green"
-    },
-    {
-      id: 7,
-      title: t({ JP: "エネルギー分野", EN: "Energy Sector" }),
-      subtitle: t({ JP: "持続可能な未来", EN: "Sustainable Future" }),
-      description: t({
-        JP: "液体・気体燃料、電力生成により再生可能エネルギーの安定供給を実現します。",
-        EN: "Achieving stable supply of renewable energy through liquid/gas fuels and power generation."
-      }),
-      details: t({
-        JP: "エネルギー自給により各地域でのエネルギー独立を支援します。",
-        EN: "Supporting energy independence in each region through energy self-sufficiency."
-      }),
-      icon: "⚡",
-      color: "orange"
-    },
-    {
-      id: 8,
-      title: t({ JP: "FMCG分野", EN: "FMCG Sector" }),
-      subtitle: t({ JP: "日常生活の革新", EN: "Innovation in Daily Life" }),
-      description: t({
-        JP: "洗剤、シャンプー、化粧品、衛生用品において環境負荷を最小限に抑えた生分解性の高い日用品を提供。",
-        EN: "Providing highly biodegradable daily products with minimal environmental impact in detergents, shampoos, cosmetics, and hygiene products."
-      }),
-      details: t({
-        JP: "持続可能な原材料により、人と地球に優しい毎日を実現します。",
-        EN: "Realizing a daily life that is kind to people and the Earth through sustainable raw materials."
-      }),
-      icon: "📦",
-      color: "pink"
+      icon: <HiOutlineShieldCheck className={iconClasses} />
     }
   ]
 
-  const getColorClasses = (color: string) => {
-    const colorMap: { [key: string]: string } = {
-      emerald: "bg-emerald-500/10 border-emerald-500/30 text-emerald-400",
-      blue: "bg-blue-500/10 border-blue-500/30 text-blue-400",
-      purple: "bg-purple-500/10 border-purple-500/30 text-purple-400",
-      cyan: "bg-cyan-500/10 border-cyan-500/30 text-cyan-400",
-      yellow: "bg-yellow-500/10 border-yellow-500/30 text-yellow-400",
-      green: "bg-green-500/10 border-green-500/30 text-green-400",
-      orange: "bg-orange-500/10 border-orange-500/30 text-orange-400",
-      pink: "bg-pink-500/10 border-pink-500/30 text-pink-400"
-    }
-    return colorMap[color] || "bg-gray-500/10 border-gray-500/30 text-gray-400"
-  }
-
   return (
-    <section className="py-32 bg-gradient-to-b from-gray-900 to-black">
+    <section id="features" className="py-24 md:py-32 bg-gradient-to-b from-gray-950 via-black to-gray-900">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
         <div className="text-center mb-16">
-          <h3 className="text-2xl font-bold text-white text-center mb-8">
-            {t({ JP: '8つの産業アプローチ', EN: '8 Industry Approaches' })}
-          </h3>
-          <p className="text-sm md:text-base text-gray-300 max-w-4xl mx-auto">
+          <p className="text-sm tracking-[0.3em] text-emerald-300 mb-4">FEATURES</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            {t({ JP: '選ばれ続ける3つの理由', EN: 'Three Reasons to Love It' })}
+          </h2>
+          <p className="max-w-3xl mx-auto text-sm md:text-base text-gray-300">
             {t({
-              JP: '「マザーベジタブル」は多様な産業応用が期待されており、以下の8つの分野にて展開が始まっています。',
-              EN: 'Mother Vegetables are expected to have diverse industrial applications, with deployment beginning in the following 8 sectors.'
+              JP: 'Mother Vegetables Confidenceが実現するのは、美しい仕上がりと肌へのやさしさ、そして一日中続く自信です。',
+              EN: 'Mother Vegetables Confidence delivers beautiful results, gentle care, and confidence that lasts all day.'
             })}
           </p>
         </div>
 
-        {/* Industries Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {industries.map((industry) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {features.map((feature) => (
             <div
-              key={industry.id}
-              className={`p-6 rounded-xl border transition-all duration-300 hover:scale-105 hover:shadow-xl ${getColorClasses(industry.color)}`}
+              key={feature.title as string}
+              className="group p-8 rounded-2xl bg-white/[0.08] border border-white/10 backdrop-blur-sm transition-transform duration-300 hover:-translate-y-2"
             >
-              <div className="text-center mb-4">
-                <div className="text-4xl mb-3">{industry.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{industry.id}. {industry.title}</h3>
-                <p className="font-semibold text-sm opacity-80">{industry.subtitle}</p>
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-emerald-400/15 border border-emerald-400/40">
+                {feature.icon}
               </div>
-              
-              <div className="space-y-3 text-sm text-gray-300">
-                <p>{industry.description}</p>
-                <p className="text-xs opacity-75">{industry.details}</p>
-              </div>
+              <h3 className="text-xl font-semibold text-white text-center mb-2">{feature.title}</h3>
+              <p className="text-sm text-emerald-200 text-center mb-4">{feature.subtitle}</p>
+              <p className="text-sm text-gray-200 leading-relaxed text-center">{feature.description}</p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   )
 }
-

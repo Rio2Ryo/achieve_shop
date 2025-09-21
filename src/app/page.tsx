@@ -1,16 +1,18 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import ProjectOverview from '@/components/ProjectOverview'
 import IndustryApproach from '@/components/IndustryApproach'
-import TeamMembers from '@/components/TeamMembers'
-import Partners from '@/components/Partners'
-import TokenInfo from '@/components/TokenInfo'
+import Ingredients from '@/components/Ingredients'
+import CaseSeries from '@/components/CaseSeries'
+import EffectsExplainer from '@/components/EffectsExplainer'
+import UsageScenarios from '@/components/UsageScenarios'
+import BeforeAfterGallery from '@/components/BeforeAfterGallery'
+import ProductLineup from '@/components/ProductLineup'
+import GuaranteeCTA from '@/components/GuaranteeCTA'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
-import LoadingScreen from '@/components/LoadingScreen'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -32,10 +34,14 @@ export default function Home() {
         <Hero />
         <ProjectOverview />
         <IndustryApproach />
-        <TeamMembers />
-        <Partners />
-        <TokenInfo />{/* */}
-        {/*<FAQ />*/}
+        <Ingredients />
+        <CaseSeries />
+        <EffectsExplainer />
+        <UsageScenarios />
+        <BeforeAfterGallery />
+        <ProductLineup />
+        <GuaranteeCTA />
+        <FAQ />
         <Footer />
       </main>
     </>
