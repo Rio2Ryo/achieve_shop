@@ -1,84 +1,65 @@
 'use client'
 
-import { useState } from 'react'
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { testimonialCases } from '@/data/testimonials'
+import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 
 export default function BeforeAfterGallery() {
   const { t } = useLanguage()
-  const [activeId, setActiveId] = useState<number | null>(null)
-
-  const toggle = (id: number) => {
-    setActiveId((prev) => (prev === id ? null : id))
-  }
 
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-black/90">
-      <div className="container mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-12">
-          <p className="text-sm tracking-[0.3em] text-emerald-300 mb-4">BEFORE & AFTER</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            {t({ JP: 'タップで変化をチェック', EN: 'Tap to Explore the Difference' })}
+    <section id="gallery" className="bg-black/95 border-t border-white/10 py-32">
+      <div className="container mx-auto px-4 max-w-5xl space-y-12">
+        <div className="text-center space-y-4">
+          <p className="text-xs tracking-[0.35em] text-amber-300">BEFORE & AFTER</p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-white">
+            {t({ JP: '圧倒的な変化体験', EN: 'See the Change at a Glance' })}
           </h2>
-          <p className="text-sm md:text-base text-gray-300 max-w-3xl mx-auto">
+          <p className="mx-auto max-w-3xl text-sm md:text-base text-gray-300 leading-relaxed">
             {t({
-              JP: 'MV-Si001で好評だった「Before After」ギャラリーを参考に、ビフォーアフターの変化をカード形式でまとめました。気になるカードをタップして画像を表示できます。',
-              EN: 'Inspired by the MV-Si001 gallery, these cards let you tap to reveal the before-and-after story behind each testimonial.'
+              JP: 'たった１ヶ月足らずで多くの方に変化を感じてもらっています。',
+              EN: 'Slide to reveal the journey from before to after. Notes below each card keep the story clear and fun.'
             })}
           </p>
         </div>
 
-        <div className="space-y-4">
-          {testimonialCases.map((item) => {
-            const quote = t(item.quote)
-            return (
-              <div
-                key={item.id}
-                className="rounded-3xl border border-white/10 bg-white/5 overflow-hidden backdrop-blur-sm"
-              >
-                <button
-                  type="button"
-                  className="w-full flex items-center justify-between px-6 py-4 text-left"
-                  onClick={() => toggle(item.id)}
-                  aria-expanded={activeId === item.id}
-                >
-                  <div>
-                    <p className="text-sm text-emerald-200 uppercase tracking-[0.3em]">
-                      {t(item.ageLabel)} · {t(item.durationLabel)}
-                    </p>
-                    <p className="text-base md:text-lg text-white font-semibold">
-                      {quote.slice(0, 36)}{quote.length > 36 ? '…' : ''}
-                    </p>
-                  </div>
-                  <span className={`text-emerald-300 text-2xl transition-transform ${activeId === item.id ? 'rotate-90' : ''}`}>
-                    ▾
-                  </span>
-                </button>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {testimonialCases.map((item) => (
+            <article
+              key={item.id}
+              className="flex flex-col gap-5 rounded-[28px] border border-white/10 bg-white/[0.05] p-6 backdrop-blur"
+            >
+              <div className="space-y-1 text-left">
+                <p className="text-xs uppercase tracking-[0.3em] text-amber-200">
+                  {t(item.ageLabel)} · {t(item.durationLabel)}
+                </p>
+                <p className="text-sm text-white leading-snug">
+                  {(() => {
+                    const quote = t(item.quote)
+                    return quote.length > 60 ? `${quote.slice(0, 60)}…` : quote
+                  })()}
+                </p>
+              </div>
 
-                <div
-                  className={`grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 pb-6 transition-[max-height,opacity] duration-300 ease-in-out ${
-                    activeId === item.id ? 'max-h-[520px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-                  }`}
-                >
-                  <div className="relative h-64 rounded-2xl overflow-hidden border border-white/15 bg-black/40">
-                    <Image src={item.before} alt="Before" fill className="object-contain" />
-                    <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/70 text-xs text-white">
-                      {t({ JP: 'Before', EN: 'Before' })}
-                    </div>
-                  </div>
-                  <p className="text-xs md:text-sm text-gray-200 leading-relaxed">{t(item.beforeNote)}</p>
-                  <div className="relative h-64 rounded-2xl overflow-hidden border border-white/15 bg-black/40">
-                    <Image src={item.after} alt="After" fill className="object-contain" />
-                    <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-emerald-400/80 text-xs text-black font-semibold">
-                      {t({ JP: 'After', EN: 'After' })}
-                    </div>
-                  </div>
-                  <p className="text-xs md:text-sm text-gray-200 leading-relaxed">{t(item.afterNote)}</p>
+              <BeforeAfterSlider
+                before={item.before}
+                after={item.after}
+                beforeAlt={t({ JP: 'Before', EN: 'Before' })}
+                afterAlt={t({ JP: 'After', EN: 'After' })}
+              />
+
+              <div className="grid gap-2 text-xs text-gray-300 leading-relaxed">
+                <div className="rounded-2xl border border-white/10 bg-black/30 px-4 py-3">
+                  <p className="text-[11px] uppercase tracking-[0.3em] text-amber-200">{t({ JP: 'Before', EN: 'Before' })}</p>
+                  <p>{t(item.beforeNote)}</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-amber-400/10 px-4 py-3">
+                  <p className="text-[11px] uppercase tracking-[0.3em] text-amber-200">{t({ JP: 'After', EN: 'After' })}</p>
+                  <p>{t(item.afterNote)}</p>
                 </div>
               </div>
-            );
-          })}
+            </article>
+          ))}
         </div>
       </div>
     </section>

@@ -57,7 +57,7 @@ export default function ScientificDetails() {
     <section id="scientific-details" className="py-32 bg-black/50">
       <div className="container mx-auto px-4">
         <ScrollAnimationWrapper animation="fadeInUp">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-400 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-400 mb-4">
             科学的メカニズム
           </h2>
           <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -72,9 +72,9 @@ export default function ScientificDetails() {
             {specifications.map((spec, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 border border-emerald-500/20 rounded-lg p-4 text-center"
+                className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-lg p-4 text-center"
               >
-                <div className="text-2xl font-bold text-emerald-400 mb-1">{spec.value}</div>
+                <div className="text-2xl font-bold text-amber-400 mb-1">{spec.value}</div>
                 <div className="text-xs text-gray-400 mb-1">{spec.unit}</div>
                 <div className="text-xs text-gray-500">{spec.label}</div>
               </div>
@@ -86,13 +86,13 @@ export default function ScientificDetails() {
         <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <ScrollAnimationWrapper key={index} animation="fadeInUp" delay={index * 0.1}>
-              <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6 hover:border-emerald-500/40 transition-all duration-300">
-                <h3 className="text-2xl font-bold text-emerald-400 mb-2">{feature.title}</h3>
+              <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-6 hover:border-amber-500/40 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-amber-400 mb-2">{feature.title}</h3>
                 <p className="text-gray-300 mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.details.map((detail, idx) => (
                     <li key={idx} className="flex items-start text-gray-400 text-sm">
-                      <svg className="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-amber-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       {detail}
@@ -107,7 +107,7 @@ export default function ScientificDetails() {
         {/* Research Papers Link */}
         <ScrollAnimationWrapper animation="fadeInUp" delay={0.4}>
           <div className="mt-12 text-center">
-            <a href="#research" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <a href="#research" className="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               📊 研究論文・データを見る
             </a>
           </div>

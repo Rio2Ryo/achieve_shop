@@ -44,10 +44,10 @@ export default function BusinessModel() {
   ]
 
   return (
-    <section id="business-model" className="py-20 bg-gradient-to-b from-black to-emerald-900/10">
+    <section id="business-model" className="py-20 bg-gradient-to-b from-black to-amber-900/10">
       <div className="container mx-auto px-4">
         <ScrollAnimationWrapper animation="fadeInUp">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-400 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-400 mb-4">
             ビジネスモデル
           </h2>
           <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -62,8 +62,8 @@ export default function BusinessModel() {
             <h3 className="text-2xl font-bold text-white text-center mb-8">収益構造</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {revenueStreams.map((stream, index) => (
-                <div key={index} className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6 hover:border-emerald-500/40 transition-all duration-300">
-                  <div className="text-3xl font-bold text-emerald-400 mb-2">{stream.percentage}</div>
+                <div key={index} className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-6 hover:border-amber-500/40 transition-all duration-300">
+                  <div className="text-3xl font-bold text-amber-400 mb-2">{stream.percentage}</div>
                   <h4 className="text-lg font-semibold text-white mb-2">{stream.title}</h4>
                   <p className="text-sm text-gray-400 mb-3">{stream.description}</p>
                   <p className="text-xs text-gray-500">{stream.details}</p>
@@ -77,19 +77,19 @@ export default function BusinessModel() {
         <ScrollAnimationWrapper animation="fadeInUp" delay={0.3}>
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-white text-center mb-8">投資収益率（ROI）推移</h3>
-            <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-8">
+            <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-8">
               <div className="flex flex-wrap justify-between items-end mb-4" style={{ minHeight: '200px' }}>
                 {roi.map((item, index) => (
                   <div key={index} className="flex-1 min-w-[100px] text-center px-2">
                     <div
                       className={`mb-2 flex items-end justify-center ${
-                        parseFloat(item.value) < 0 ? 'text-red-400' : 'text-emerald-400'
+                        parseFloat(item.value) < 0 ? 'text-red-400' : 'text-amber-400'
                       }`}
                       style={{ height: '150px' }}
                     >
                       <div
                         className={`w-full max-w-[60px] ${
-                          parseFloat(item.value) < 0 ? 'bg-red-500/30' : 'bg-emerald-500/30'
+                          parseFloat(item.value) < 0 ? 'bg-red-500/30' : 'bg-amber-500/30'
                         } rounded-t`}
                         style={{
                           height: `${Math.abs(parseFloat(item.value)) * 1}px`,
@@ -114,10 +114,10 @@ export default function BusinessModel() {
             <h3 className="text-2xl font-bold text-white text-center mb-8">対象市場規模</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {marketSize.map((market, index) => (
-                <div key={index} className="bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 border border-emerald-500/20 rounded-lg p-4 text-center">
+                <div key={index} className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-lg p-4 text-center">
                   <h4 className="text-sm text-gray-400 mb-2">{market.market}</h4>
-                  <div className="text-2xl font-bold text-emerald-400 mb-1">{market.size}</div>
-                  <div className="text-sm text-emerald-300">成長率: {market.growth}</div>
+                  <div className="text-2xl font-bold text-amber-400 mb-1">{market.size}</div>
+                  <div className="text-sm text-amber-300">成長率: {market.growth}</div>
                 </div>
               ))}
             </div>
@@ -127,10 +127,10 @@ export default function BusinessModel() {
         {/* CTA */}
         <ScrollAnimationWrapper animation="fadeInUp" delay={0.5}>
           <div className="mt-12 text-center">
-            <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 mr-4">
+            <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 mr-4">
               💼 投資家向け資料
             </button>
-            <button className="border border-emerald-500 hover:bg-emerald-500/10 text-emerald-400 px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+            <button className="border border-amber-500 hover:bg-amber-500/10 text-amber-400 px-8 py-3 rounded-lg font-semibold transition-all duration-300">
               📊 詳細な財務モデル
             </button>
           </div>

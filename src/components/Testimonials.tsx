@@ -11,7 +11,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-24 md:py-32 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] text-emerald-300 mb-4">TESTIMONIALS</p>
+          <p className="text-sm tracking-[0.3em] text-amber-300 mb-4">TESTIMONIALS</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t({ JP: 'お客様の喜びの声', EN: 'Voices from Our Customers' })}
           </h2>
@@ -38,13 +38,13 @@ export default function Testimonials() {
                 </div>
                 <div className="relative h-40 sm:h-48">
                   <Image src={testimonial.after} alt="After" fill className="object-cover" />
-                  <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-emerald-400/80 text-xs text-black font-semibold">
+                  <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-amber-400/80 text-xs text-black font-semibold">
                     {t({ JP: 'After', EN: 'After' })}
                   </div>
                 </div>
               </div>
               <div className="p-6 flex flex-col gap-4 flex-1">
-                <div className="flex items-center justify-between text-xs text-emerald-200 uppercase tracking-[0.25em]">
+                <div className="flex items-center justify-between text-xs text-amber-200 uppercase tracking-[0.25em]">
                   <span>{t(testimonial.ageLabel)}</span>
                   <span>{t(testimonial.durationLabel)}</span>
                 </div>

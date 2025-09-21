@@ -46,10 +46,10 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-32 bg-gradient-to-b from-black to-emerald-900/20">
+    <section id="contact" className="py-32 bg-gradient-to-b from-black to-amber-900/20">
       <div className="container mx-auto px-4">
         <ScrollAnimationWrapper animation="fadeInUp">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-400 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-400 mb-4">
             お問い合わせ
           </h2>
           <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -62,8 +62,8 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <ScrollAnimationWrapper animation="fadeInLeft" delay={0.2}>
-              <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-8">
-                <h3 className="text-xl font-bold text-emerald-400 mb-6">お問い合わせフォーム</h3>
+              <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-8">
+                <h3 className="text-xl font-bold text-amber-400 mb-6">お問い合わせフォーム</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
@@ -74,7 +74,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-2 bg-black/50 border border-emerald-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500/50"
+                        className="w-full px-4 py-2 bg-black/50 border border-amber-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-amber-500/50"
                         placeholder="山田 太郎"
                       />
                     </div>
@@ -85,7 +85,7 @@ export default function Contact() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-black/50 border border-emerald-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500/50"
+                        className="w-full px-4 py-2 bg-black/50 border border-amber-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-amber-500/50"
                         placeholder="株式会社〇〇"
                       />
                     </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-2 bg-black/50 border border-emerald-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500/50"
+                        className="w-full px-4 py-2 bg-black/50 border border-amber-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-amber-500/50"
                         placeholder="example@email.com"
                       />
                     </div>
@@ -111,7 +111,7 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-black/50 border border-emerald-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500/50"
+                        className="w-full px-4 py-2 bg-black/50 border border-amber-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-amber-500/50"
                         placeholder="090-1234-5678"
                       />
                     </div>
@@ -123,7 +123,7 @@ export default function Contact() {
                       name="category"
                       value={formData.category}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 bg-black/50 border border-emerald-500/20 rounded-lg text-white focus:outline-none focus:border-emerald-500/50"
+                      className="w-full px-4 py-2 bg-black/50 border border-amber-500/20 rounded-lg text-white focus:outline-none focus:border-amber-500/50"
                     >
                       <option value="general">一般的なお問い合わせ</option>
                       <option value="business">導入・ビジネスに関して</option>
@@ -142,7 +142,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-2 bg-black/50 border border-emerald-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500/50 resize-none"
+                      className="w-full px-4 py-2 bg-black/50 border border-amber-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-amber-500/50 resize-none"
                       placeholder="お問い合わせ内容をご記入ください"
                     />
                   </div>
@@ -155,7 +155,7 @@ export default function Contact() {
                       className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
                         isSubmitting
                           ? 'bg-gray-600 cursor-not-allowed'
-                          : 'bg-emerald-500 hover:bg-emerald-600 text-white'
+                          : 'bg-amber-500 hover:bg-amber-600 text-white'
                       }`}
                     >
                       {isSubmitting ? '送信中...' : '送信する'}
@@ -163,7 +163,7 @@ export default function Contact() {
                   </div>
 
                   {submitStatus === 'success' && (
-                    <div className="mt-4 p-4 bg-emerald-500/20 border border-emerald-500/50 rounded-lg text-emerald-400 text-sm">
+                    <div className="mt-4 p-4 bg-amber-500/20 border border-amber-500/50 rounded-lg text-amber-400 text-sm">
                       お問い合わせありがとうございます。内容を確認次第、ご連絡させていただきます。
                     </div>
                   )}
@@ -180,8 +180,8 @@ export default function Contact() {
             <ScrollAnimationWrapper animation="fadeInRight" delay={0.3}>
               <div className="space-y-8">
                 {/* Company Info */}
-                <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6">
-                  <h3 className="text-xl font-bold text-emerald-400 mb-4">会社情報</h3>
+                <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-amber-400 mb-4">会社情報</h3>
                   <dl className="space-y-3">
                     <div>
                       <dt className="text-gray-500 text-sm">会社名</dt>
@@ -203,33 +203,33 @@ export default function Contact() {
                 </div>
 
                 {/* Contact Methods */}
-                <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6">
-                  <h3 className="text-xl font-bold text-emerald-400 mb-4">連絡先</h3>
+                <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-amber-400 mb-4">連絡先</h3>
                   <div className="space-y-3">
                     <div className="flex items-center">
-                      <svg className="w-5 h-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-amber-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                       <div>
                         <div className="text-gray-500 text-sm">メール</div>
-                        <a href="mailto:info@mothervegetables.com" className="text-white hover:text-emerald-400 transition-colors">
+                        <a href="mailto:info@mothervegetables.com" className="text-white hover:text-amber-400 transition-colors">
                           info@mothervegetables.com
                         </a>
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <svg className="w-5 h-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-amber-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <div>
                         <div className="text-gray-500 text-sm">電話</div>
-                        <a href="tel:+81312345678" className="text-white hover:text-emerald-400 transition-colors">
+                        <a href="tel:+81312345678" className="text-white hover:text-amber-400 transition-colors">
                           03-1234-5678
                         </a>
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <svg className="w-5 h-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-amber-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       <div>
@@ -241,16 +241,16 @@ export default function Contact() {
                 </div>
 
                 {/* Quick Links */}
-                <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 border border-emerald-500/20 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-emerald-400 mb-3">資料ダウンロード</h3>
+                <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-amber-400 mb-3">資料ダウンロード</h3>
                   <div className="space-y-2">
-                    <a href="/0912_whitepaper_ja.pdf" className="flex items-center justify-between text-white hover:text-emerald-400 transition-colors p-2 rounded hover:bg-white/5">
+                    <a href="/0912_whitepaper_ja.pdf" className="flex items-center justify-between text-white hover:text-amber-400 transition-colors p-2 rounded hover:bg-white/5">
                       <span>📄 ホワイトペーパー</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                       </svg>
                     </a>
-                    <a href="#" className="flex items-center justify-between text-white hover:text-emerald-400 transition-colors p-2 rounded hover:bg-white/5">
+                    <a href="#" className="flex items-center justify-between text-white hover:text-amber-400 transition-colors p-2 rounded hover:bg-white/5">
                       <span>📊 会社案内</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

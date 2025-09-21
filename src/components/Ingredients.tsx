@@ -6,44 +6,6 @@ import { useLanguage } from '@/contexts/LanguageContext'
 export default function Ingredients() {
   const { t } = useLanguage()
 
-  const composition = [
-    {
-      label: t({ JP: '配合量', EN: 'Dosage' }),
-      value: t({
-        JP: 'マザーベジシリカ 1,500mg / 2,000mg / 10,000mg バリエーション',
-        EN: 'Mother Veggie Silica in 1,500 mg, 2,000 mg, and 10,000 mg variants'
-      })
-    },
-    {
-      label: t({ JP: '原料産地', EN: 'Origin' }),
-      value: t({
-        JP: '鹿児島県・大隅半島の地下水とクリーンルーム環境で培養。',
-        EN: 'Cultivated in clean rooms using underground water from the Ōsumi Peninsula, Kagoshima.'
-      })
-    },
-    {
-      label: t({ JP: '純度', EN: 'Purity' }),
-      value: t({
-        JP: 'オーガニックシリカ純度97.1%以上（第三者機関による分析済み）',
-        EN: '≥97.1% organic silica purity (independently analysed).'
-      })
-    }
-  ]
-
-  const processSteps = [
-    t({
-      JP: 'STEP1: グリーンハウスでマザーベジタブルを24時間培養し、CO₂吸収量・温湿度・光量をリアルタイム記録。',
-      EN: 'Step 1: Cultivate Mother Vegetables around the clock in greenhouses while logging CO₂ uptake, temperature, and light in real time.'
-    }),
-    t({
-      JP: 'STEP2: 低温乾燥とマイクロ粉砕で粒径を均一化。不要な不純物を多段フィルターで除去。',
-      EN: 'Step 2: Low-temperature drying and micro-milling unify particle size, followed by multi-stage filtration to remove impurities.'
-    }),
-    t({
-      JP: 'STEP3: 医薬部外品GMP準拠クリーンルームで充填し、ロットごとに成分証明書を発行。',
-      EN: 'Step 3: Fill in GMP-compliant clean rooms and issue a certificate of analysis for every lot.'
-    })
-  ]
 
   const benefits = [
     {
@@ -116,21 +78,6 @@ export default function Ingredients() {
                     })}
                   </p>
                 </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {composition.map((item) => (
-                  <div key={item.label} className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                    <p className="text-xs text-emerald-200 tracking-[0.2em] mb-2">{item.label}</p>
-                    <p className="text-sm text-gray-100 leading-snug">{item.value}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-black/25 border border-white/10 rounded-2xl p-5 space-y-2">
-                {processSteps.map((step) => (
-                  <p key={step} className="text-xs md:text-sm text-gray-100 leading-relaxed">
-                    {step}
-                  </p>
-                ))}
               </div>
             </div>
 

@@ -10,8 +10,8 @@ const faqs = [
       EN: 'Can I use it on sensitive skin?'
     },
     answer: {
-      JP: 'はい、医薬部外品原料規格をクリアした安全な処方です。敏感肌の方でも安心してお使いいただけます。',
-      EN: 'Yes. The quasi-drug compliant formula is gentle and safe even for sensitive skin.'
+      JP: 'はい。医薬部外品原料で敏感肌でも安心です。',
+      EN: 'Yes—its quasi-drug grade formula is gentle on sensitive skin.'
     }
   },
   {
@@ -20,8 +20,8 @@ const faqs = [
       EN: 'When should I apply it?'
     },
     answer: {
-      JP: 'スキンケアの後、メイクの仕上げまでどのタイミングでもお使いいただけます。下地の上からでも、ファンデーションの後でも、お好みの順番でご使用ください。',
-      EN: 'Use it anytime after skincare, from prepping to finishing makeup. Layer over primer or after foundation—whatever suits your routine.'
+      JP: 'スキンケアの後ならいつでもOK。下地にも仕上げにも使えます。',
+      EN: 'Anytime after skincare—use it as a primer or a finishing step.'
     }
   },
   {
@@ -30,8 +30,8 @@ const faqs = [
       EN: 'How long does one compact last?'
     },
     answer: {
-      JP: '1日1回の使用で、500mgは約30日、2,000mgは約60日、5,000mgは約150日ご使用いただけます。',
-      EN: 'With once-daily use: 500 mg lasts about 30 days, 2,000 mg about 60 days, and 5,000 mg about 150 days.'
+      JP: '1日1回の使用で1,500mgは約30日、2,000mgは約60日続きます。',
+      EN: 'With once-daily use: 1,500 mg lasts around 30 days and 2,000 mg about 60 days.'
     }
   },
   {
@@ -40,8 +40,8 @@ const faqs = [
       EN: 'How should I store the powder?'
     },
     answer: {
-      JP: '直射日光と高温多湿を避け、使用後はしっかりとフタを閉めてください。開封後は6か月以内のご使用をおすすめします。',
-      EN: 'Keep the compact away from direct sunlight and humidity, closing the lid firmly after use. We recommend finishing it within six months of opening.'
+      JP: '直射日光と湿気を避け、使い終えたらフタを閉めてください。',
+      EN: 'Keep it away from sun and humidity, closing the lid firmly after each use.'
     }
   },
   {
@@ -50,8 +50,8 @@ const faqs = [
       EN: 'Are there any precautions?'
     },
     answer: {
-      JP: '傷やはれもの、湿しん等の異常がある部位には使用しないでください。肌に異常が現れた場合は使用を中止し、皮膚科専門医等へご相談ください。',
-      EN: 'Do not use on areas with cuts, swelling, or eczema. If irritation appears, stop using the powder and consult a dermatologist.'
+      JP: '傷や腫れがある部分には使わず、異常が出たら使用をやめ医師に相談してください。',
+      EN: 'Avoid broken or irritated skin and stop using if issues appear—consult a doctor.'
     }
   },
   {
@@ -60,8 +60,8 @@ const faqs = [
       EN: 'What payment and delivery options are available?'
     },
     answer: {
-      JP: '公式ストアではクレジットカード・銀行振込に対応しています。通常は2営業日以内に発送し、追跡番号をメールでお知らせします。',
-      EN: 'The official store accepts credit cards and bank transfers. Orders ship within two business days and you will receive tracking information by email.'
+      JP: '公式ストアはクレジットカードと銀行振込に対応し、2営業日以内に発送します。',
+      EN: 'The official store accepts cards and bank transfer, shipping within two business days.'
     }
   },
   {
@@ -70,8 +70,8 @@ const faqs = [
       EN: 'Can I use it with other cosmetics?'
     },
     answer: {
-      JP: 'はい、他のスキンケア製品やメイクアップ製品と併用できます。ファンデーションの上からも下地としてもお使いいただけます。',
-      EN: 'Yes, it works well with other skincare and makeup products. Use it over foundation or as a primer under makeup.'
+      JP: 'はい。ファンデの上からも、下地としても問題なく使えます。',
+      EN: 'Yes—you can layer it over foundation or use it as a primer.'
     }
   },
   {
@@ -80,8 +80,8 @@ const faqs = [
       EN: 'Can men use this product?'
     },
     answer: {
-      JP: 'もちろんです。性別を問わずお使いいただけます。特にテカリや毛穴が気になる男性にも好評です。',
-      EN: 'Absolutely. It’s suitable for all genders. Many men appreciate its shine control and pore-minimizing effects.'
+      JP: 'もちろん。テカリを抑えたい男性にも選ばれています。',
+      EN: 'Absolutely—many men use it to keep shine under control.'
     }
   },
   {
@@ -90,8 +90,8 @@ const faqs = [
       EN: 'Is there an expiration date?'
     },
     answer: {
-      JP: '未開封で3年、開封後は6ヶ月以内のご使用をおすすめします。高温多湿を避けて保管してください。',
-      EN: 'Unopened products last 3 years. Once opened, we recommend using within 6 months. Store away from heat and humidity.'
+      JP: '未開封で約3年、開封後は6ヶ月以内のご使用がおすすめです。',
+      EN: 'Unopened lasts about three years; finish within six months after opening.'
     }
   },
   {
@@ -100,8 +100,8 @@ const faqs = [
       EN: 'What is your return policy?'
     },
     answer: {
-      JP: '商品到着後30日以内であれば、使用済みでも返品・返金を承っております。詳細は公式サイトの返品ポリシーをご確認ください。',
-      EN: 'We offer a 30-day money-back guarantee, even for used products. Please check our return policy on the official website for details.'
+      JP: '到着後30日以内なら使用済みでも返金いたします。',
+      EN: 'We refund within 30 days of delivery—even if the product is used.'
     }
   }
 ]
@@ -118,14 +118,14 @@ export default function FAQ() {
     <section id="faq" className="py-24 md:py-32 bg-black/90">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
-          <p className="text-sm tracking-[0.3em] text-emerald-300 mb-4">FAQ</p>
+          <p className="text-sm tracking-[0.3em] text-amber-300 mb-4">FAQ</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t({ JP: 'よくあるご質問', EN: 'Frequently Asked Questions' })}
           </h2>
           <p className="text-sm md:text-base text-gray-300">
             {t({
-              JP: 'Mother Vegetables Confidenceに関するお問い合わせの多いご質問をまとめました。',
-              EN: 'Answers to the most common questions about Mother Vegetables Confidence.'
+              JP: 'よくいただく質問をコンパクトにまとめました。',
+              EN: 'Quick answers to the questions we hear most.'
             })}
           </p>
         </div>
@@ -144,7 +144,7 @@ export default function FAQ() {
                 >
                   <span className="text-white text-sm md:text-base font-medium">{t(faq.question)}</span>
                   <svg
-                    className={`w-5 h-5 text-emerald-300 transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}
+                    className={`w-5 h-5 text-amber-300 transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -154,7 +154,7 @@ export default function FAQ() {
                 </button>
                 <div
                   className={`px-5 sm:px-6 transition-[max-height] duration-300 ease-in-out ${
-                    isActive ? 'max-h-60 pb-4' : 'max-h-0'
+                    isActive ? 'max-h-40 pb-4' : 'max-h-0'
                   } overflow-hidden`}
                 >
                   <p className="text-sm md:text-base text-gray-200 leading-relaxed">

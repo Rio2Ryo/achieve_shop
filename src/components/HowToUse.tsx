@@ -46,16 +46,16 @@ export default function HowToUse() {
   ]
 
   return (
-    <section id="how-to-use" className="py-24 md:py-32 bg-gradient-to-b from-black/95 to-emerald-900/20">
+    <section id="how-to-use" className="py-24 md:py-32 bg-gradient-to-b from-black/95 to-amber-900/20">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <p className="text-sm tracking-[0.3em] text-emerald-300 mb-4">HOW TO USE</p>
+          <p className="text-sm tracking-[0.3em] text-amber-300 mb-4">HOW TO USE</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t({ JP: '簡単3ステップの使い方', EN: 'Simple 3-Step Guide' })}
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             {t({
-              JP: '朝の5秒で完了。一日中崩れない陶器肌を実現する使い方をマスターしましょう。',
+              JP: 'たった5秒で完了。一日中崩れない陶器肌を実現する使い方をマスターしましょう。',
               EN: 'Master the 5-second morning routine for all-day porcelain skin perfection.'
             })}
           </p>
@@ -66,12 +66,12 @@ export default function HowToUse() {
             <div key={index} className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-3xl">{step.icon}</span>
-                <span className="text-xs text-emerald-300 font-semibold uppercase tracking-wider">{step.time}</span>
+                <span className="text-xs text-amber-300 font-semibold uppercase tracking-wider">{step.time}</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
               <p className="text-gray-300 text-sm mb-4">{step.description}</p>
-              <div className="bg-emerald-400/10 border border-emerald-400/30 rounded-lg px-3 py-2">
-                <p className="text-xs text-emerald-200">💡 {step.tip}</p>
+              <div className="bg-amber-400/10 border border-amber-400/30 rounded-lg px-3 py-2">
+                <p className="text-xs text-amber-200">💡 {step.tip}</p>
               </div>
             </div>
           ))}
@@ -94,7 +94,7 @@ export default function HowToUse() {
         <div className="text-center mt-8">
           <button
             onClick={() => document.getElementById('lineup')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-3 rounded-full bg-emerald-400 text-black font-semibold hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/30"
+            className="px-8 py-3 rounded-full bg-amber-400 text-black font-semibold hover:bg-amber-300 transition-colors shadow-lg shadow-amber-500/30"
           >
             {t({ JP: '商品を見る', EN: 'View Products' })}
           </button>

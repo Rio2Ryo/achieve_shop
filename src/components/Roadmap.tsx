@@ -73,7 +73,7 @@ export default function Roadmap() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
-        return 'bg-emerald-500 border-emerald-500'
+        return 'bg-amber-500 border-amber-500'
       case 'in-progress':
         return 'bg-orange-500 border-orange-500 animate-pulse'
       case 'upcoming':
@@ -97,10 +97,10 @@ export default function Roadmap() {
   }
 
   return (
-    <section id="roadmap" className="py-32 bg-gradient-to-b from-emerald-900/10 to-black">
+    <section id="roadmap" className="py-32 bg-gradient-to-b from-amber-900/10 to-black">
       <div className="container mx-auto px-4">
         <ScrollAnimationWrapper animation="fadeInUp">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-400 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-400 mb-4">
             ロードマップ
           </h2>
           <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -112,7 +112,7 @@ export default function Roadmap() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-emerald-500 via-blue-500 to-gray-600"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-amber-500 via-blue-500 to-gray-600"></div>
 
           {/* Milestones */}
           <div className="space-y-12">
@@ -125,14 +125,14 @@ export default function Roadmap() {
                 <div className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                   <div className={`w-1/2 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
                     <div className={`inline-block ${index % 2 === 0 ? 'mr-0' : 'ml-0'}`}>
-                      <div className="bg-black/60 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6 hover:border-emerald-500/40 transition-all duration-300">
+                      <div className="bg-black/60 backdrop-blur-md border border-amber-500/20 rounded-xl p-6 hover:border-amber-500/40 transition-all duration-300">
                         <div className="flex items-center justify-between mb-3">
                           <div>
-                            <span className="text-2xl font-bold text-emerald-400">{item.year}</span>
+                            <span className="text-2xl font-bold text-amber-400">{item.year}</span>
                             <span className="text-gray-400 ml-2">{item.quarter}</span>
                           </div>
                           <span className={`text-xs px-3 py-1 rounded-full text-white ${
-                            item.status === 'completed' ? 'bg-emerald-500' :
+                            item.status === 'completed' ? 'bg-amber-500' :
                             item.status === 'in-progress' ? 'bg-orange-500' :
                             item.status === 'upcoming' ? 'bg-blue-500' :
                             'bg-gray-600'
@@ -143,7 +143,7 @@ export default function Roadmap() {
                         <ul className="space-y-2">
                           {item.milestones.map((milestone, idx) => (
                             <li key={idx} className="flex items-start text-gray-300 text-sm">
-                              <svg className="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <svg className="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                               </svg>
                               {milestone}
@@ -166,16 +166,16 @@ export default function Roadmap() {
         {/* Key Metrics */}
         <ScrollAnimationWrapper animation="fadeInUp" delay={0.4}>
           <div className="mt-20 grid md:grid-cols-3 gap-8 text-center">
-            <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">2030年</div>
+            <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-6">
+              <div className="text-4xl font-bold text-amber-400 mb-2">2030年</div>
               <div className="text-gray-300">目標達成年</div>
             </div>
-            <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">1,000拠点</div>
+            <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-6">
+              <div className="text-4xl font-bold text-amber-400 mb-2">1,000拠点</div>
               <div className="text-gray-300">グローバル展開目標</div>
             </div>
-            <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-xl p-6">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">1億トン</div>
+            <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-xl p-6">
+              <div className="text-4xl font-bold text-amber-400 mb-2">1億トン</div>
               <div className="text-gray-300">年間CO₂削減目標</div>
             </div>
           </div>

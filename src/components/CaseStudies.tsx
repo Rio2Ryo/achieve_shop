@@ -64,7 +64,7 @@ export default function CaseStudies() {
     <section id="case-studies" className="py-32 bg-black/50">
       <div className="container mx-auto px-4">
         <ScrollAnimationWrapper animation="fadeInUp">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-400 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-400 mb-4">
             導入事例・実績
           </h2>
           <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -77,8 +77,8 @@ export default function CaseStudies() {
         <ScrollAnimationWrapper animation="fadeInUp" delay={0.2}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
             {achievements.map((stat, index) => (
-              <div key={index} className="bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 border border-emerald-500/20 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-emerald-400 mb-1">{stat.value}</div>
+              <div key={index} className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-amber-400 mb-1">{stat.value}</div>
                 <div className="text-sm text-gray-400">{stat.unit}</div>
                 <div className="text-xs text-gray-500 mt-2">{stat.label}</div>
               </div>
@@ -92,7 +92,7 @@ export default function CaseStudies() {
             <ScrollAnimationWrapper key={index} animation="fadeInUp" delay={index * 0.2}>
               <div className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}>
                 <div className="lg:w-1/2">
-                  <div className="relative h-[300px] rounded-xl overflow-hidden border border-emerald-500/20">
+                  <div className="relative h-[300px] rounded-xl overflow-hidden border border-amber-500/20">
                     <Image
                       src={study.image}
                       alt={study.title}
@@ -101,7 +101,7 @@ export default function CaseStudies() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 right-4">
-                      <span className="inline-block bg-emerald-500 text-white text-xs px-3 py-1 rounded-full mb-2">
+                      <span className="inline-block bg-amber-500 text-white text-xs px-3 py-1 rounded-full mb-2">
                         {study.category}
                       </span>
                       <div className="flex items-center text-white text-sm">
@@ -115,7 +115,7 @@ export default function CaseStudies() {
                   </div>
                 </div>
                 <div className="lg:w-1/2">
-                  <h3 className="text-2xl font-bold text-emerald-400 mb-4">{study.title}</h3>
+                  <h3 className="text-2xl font-bold text-amber-400 mb-4">{study.title}</h3>
                   <p className="text-gray-300 mb-4">{study.description}</p>
                   <div className="grid grid-cols-3 gap-4 mb-4">
                     <div>
@@ -124,19 +124,19 @@ export default function CaseStudies() {
                     </div>
                     <div>
                       <div className="text-sm text-gray-500">CO₂削減</div>
-                      <div className="text-emerald-400 font-semibold">{study.co2Reduction}</div>
+                      <div className="text-amber-400 font-semibold">{study.co2Reduction}</div>
                     </div>
                     <div>
                       <div className="text-sm text-gray-500">ROI</div>
                       <div className="text-white font-semibold">{study.roi}</div>
                     </div>
                   </div>
-                  <div className="bg-black/40 backdrop-blur-md border border-emerald-500/20 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-emerald-400 mb-2">成果</h4>
+                  <div className="bg-black/40 backdrop-blur-md border border-amber-500/20 rounded-lg p-4">
+                    <h4 className="text-sm font-semibold text-amber-400 mb-2">成果</h4>
                     <ul className="space-y-1">
                       {study.results.map((result, idx) => (
                         <li key={idx} className="flex items-start text-gray-400 text-sm">
-                          <svg className="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                           {result}
@@ -153,7 +153,7 @@ export default function CaseStudies() {
         {/* CTA */}
         <ScrollAnimationWrapper animation="fadeInUp" delay={0.4}>
           <div className="mt-16 text-center">
-            <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               📑 全ての導入事例を見る
             </button>
           </div>

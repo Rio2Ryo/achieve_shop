@@ -3,100 +3,155 @@
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
+interface Scenario {
+  id: string
+  headline: { JP: string; EN: string }
+  beforeTitle: { JP: string; EN: string }
+  afterTitle: { JP: string; EN: string }
+  beforeImage: string
+  beforeDetail: string
+  afterImage: string
+  afterDetail: string
+  beforeDescription: { JP: string; EN: string }
+  beforeRisk: { JP: string; EN: string }
+  afterDescription: { JP: string; EN: string }
+  afterBenefit: { JP: string; EN: string }
+  footer: { JP: string; EN: string }
+}
+
+const scenarios: Scenario[] = [
+  {
+    id: 'daytime-shine',
+    headline: {
+      JP: '「顔のテカリを消す」効果はマザベジパウダーならでは',
+      EN: 'Mother Veggie Powder Keeps Shine Out of Sight'
+    },
+    beforeTitle: {
+      JP: '皮脂の油分がある状態',
+      EN: 'Skin Before Application'
+    },
+    afterTitle: {
+      JP: 'マザベジパウダー塗布後',
+      EN: 'After Mother Veggie Powder'
+    },
+    beforeImage: '/doc1.jpg',
+    beforeDetail: '/doc1-a.jpg',
+    afterImage: '/doc2.jpg',
+    afterDetail: '/doc2-b.jpg',
+    beforeDescription: {
+      JP: '肌表面の油分が同じ方向に光を跳ね返し、テカリとして目立ちます。',
+      EN: 'Oil on the surface reflects light in the same direction, so shine becomes visible.'
+    },
+    beforeRisk: {
+      JP: '既存のケミカルパウダーは形状が均一なため、塗るとさらに光がまとまりテカリやすくなることも。',
+      EN: 'Conventional straight-cut powders share identical shapes, bundling reflected light and amplifying shine.'
+    },
+    afterDescription: {
+      JP: 'Mother Vegetables由来の粒子はそれぞれ個性があり、当たった光を細かく散乱。テカリが艶のある透明感に変わります。',
+      EN: 'Mother Vegetable particles are all slightly different, scattering light and leaving only a refined glow.'
+    },
+    afterBenefit: {
+      JP: '潤いを抱えたまま余分な皮脂を吸着し、抗酸化ケアで肌も清潔に。デートや商談前の5秒タッチアップに最適です。',
+      EN: 'They absorb excess oil while holding moisture and provide antioxidant care—perfect for a five-second refresh before any meeting.'
+    },
+    footer: {
+      JP: 'さっと10秒滑らせるだけで清潔感ある印象に。日中のマストアイテム。',
+      EN: 'Glide for ten seconds to look composed—your daytime essential.'
+    }
+  },
+  {
+    id: 'night-tone',
+    headline: {
+      JP: '就寝前の「すっぴん」もトーンアップでナチュラルに',
+      EN: 'Tone Up Bare Skin Before Bed'
+    },
+    beforeTitle: {
+      JP: 'シワや毛穴がある状態',
+      EN: 'Fine Lines & Pores Visible'
+    },
+    afterTitle: {
+      JP: 'マザベジパウダー塗布後',
+      EN: 'After Mother Veggie Powder'
+    },
+    beforeImage: '/doc3.jpg',
+    beforeDetail: '/doc4.jpg',
+    afterImage: '/doc2.jpg',
+    afterDetail: '/doc2-b.jpg',
+    beforeDescription: {
+      JP: '就寝前のすっぴんはシワや毛穴が目立ち、肌の凹凸が陰になりがちです。',
+      EN: 'Bare skin before sleep often shows fine lines and pores as shadows.'
+    },
+    beforeRisk: {
+      JP: 'ファンデーションを重ねると乾燥して割れることもあるため、寝る前は使いづらい。',
+      EN: 'Layering foundation can crack as it dries, making it unsuitable before sleep.'
+    },
+    afterDescription: {
+      JP: 'マザベジパウダーは凹凸に寄り添いながら光をやわらかく散らし、素肌をほんのり明るく見せます。',
+      EN: 'Mother Veggie Powder settles into texture, diffuses light softly, and lifts bare-skin brightness.'
+    },
+    afterBenefit: {
+      JP: '寝ている間も気になる部分をカバーしつつ清潔な肌をキープ。マスクや長時間ケアが必要な現場でも使えます。',
+      EN: 'It covers concern areas while keeping skin fresh through the night—ideal for long shifts or mask wear.'
+    },
+    footer: {
+      JP: '就寝前だけでなく、メイクができない医療・介護現場でも活躍。24時間いつでも頼れる存在です。',
+      EN: 'Trusted for bedtime and makeup-free settings like medical or caregiving work—reliable around the clock.'
+    }
+  }
+]
+
 export default function EffectsExplainer() {
   const { t } = useLanguage()
 
-  const sections = [
-    {
-      id: 'shine-control',
-      title: t({ JP: '「顔のテカリを消す」効果はマザベジ形状ならでは', EN: 'Only Mother Vegetables Stop Shine This Way' }),
-      before: t({
-        JP: '皮脂の油分が同じ形状で並ぶことで光が一方向に跳ね返り、テカリが目立つ。',
-        EN: 'Sebum molecules align in one direction, reflecting light evenly and making shine visible.'
-      }),
-      after: t({
-        JP: '天然由来の個性ある粒子が光をランダムに拡散。余分な油分を吸着しながら潤いもキープ。',
-        EN: 'Naturally varied particles diffuse light randomly, absorbing excess oil while keeping moisture.'
-      }),
-      description: t({
-        JP: 'マザベジシリカはパウダーひと粒ひと粒の形が異なるため、光の反射が分散。皮脂を吸着しつつ水分をキャッチすることで、清潔感のある質感が長時間続きます。',
-        EN: 'Each Mother Vegetable silica particle has a unique shape, scattering light and absorbing sebum while catching moisture for a clean finish that lasts.'
-      }),
-      cta: t({ JP: 'デートや商談前の必須アイテムに', EN: 'Essential before dates or meetings' }),
-      image: '/doc2-b.jpg'
-    },
-    {
-      id: 'night-care',
-      title: t({ JP: '睡眠前の「すっぴん」もトーンアップでナチュラルに', EN: 'Tone Up Your Bare Skin Even Before Sleep' }),
-      before: t({
-        JP: 'シワや毛穴、色むらが目立ち、すっぴんに自信が持てない。',
-        EN: 'Fine lines, pores, and uneven tone stand out, reducing bare-skin confidence.'
-      }),
-      after: t({
-        JP: '粒子が肌にフィットして凹凸をカバー。寝る前にも使えて、割れのない自然な仕上がり。',
-        EN: 'Particles settle into texture to blur irregularities. Safe to use before bed without cracking.'
-      }),
-      description: t({
-        JP: 'マザベジシリカはひと塗りで気になる箇所に密着。スキンケアしながらトーンアップできるので、医療・介護などメイクができない現場でも活躍します。',
-        EN: 'Mother Vegetable silica adheres instantly where you need it, toning up while caring for skin—perfect even in medical or caregiving settings where makeup is limited.'
-      }),
-      cta: t({ JP: '24時間いつでも清潔感と透明感を', EN: 'Stay fresh and radiant 24/7' }),
-      image: '/doc4.jpg'
-    }
-  ]
-
   return (
-    <section id="effects" className="py-24 md:py-32 bg-gradient-to-b from-gray-900 to-black">
-      <div className="container mx-auto px-4 space-y-16">
-        {sections.map((section, index) => {
-          const textOrder = index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'
-          const imageOrder = index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'
+    <section id="effects" className="bg-black border-t border-white/10 py-32">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-5xl space-y-16">
+          {scenarios.map((scenario) => (
+            <article
+              key={scenario.id}
+              className="rounded-[32px] border border-white/10 bg-white/[0.04] p-8 md:p-12 text-gray-900"
+            >
+              <h3 className="text-center text-xl md:text-2xl font-semibold text-amber-300 mb-8">
+                {t(scenario.headline)}
+              </h3>
 
-          return (
-            <div key={section.id} className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div className={`space-y-5 ${textOrder}`}>
-                <p className="text-xs uppercase tracking-[0.4em] text-emerald-200">USE CASE</p>
-                <h3 className="text-2xl md:text-3xl font-semibold text-white leading-snug">
-                  {section.title}
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-5 rounded-2xl bg-white/5 border border-white/10">
-                    <p className="text-sm text-emerald-200 font-semibold mb-2">{t({ JP: 'Before', EN: 'Before' })}</p>
-                    <p className="text-sm text-gray-200 leading-relaxed">{section.before}</p>
+              <div className="grid gap-10 md:grid-cols-2">
+                <div className="space-y-6">
+                  <h4 className="text-lg font-semibold text-gray-900 text-center md:text-left">
+                    {t(scenario.beforeTitle)}
+                  </h4>
+                  <div className="space-y-4">
+                    <Image src={scenario.beforeImage} alt={scenario.beforeTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
+                    <Image src={scenario.beforeDetail} alt={scenario.beforeTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
                   </div>
-                  <div className="p-5 rounded-2xl bg-emerald-400/15 border border-emerald-400/30">
-                    <p className="text-sm text-emerald-100 font-semibold mb-2">{t({ JP: 'After', EN: 'After' })}</p>
-                    <p className="text-sm text-gray-200 leading-relaxed">{section.after}</p>
+                  <div className="space-y-3 text-sm text-gray-800">
+                    <p>{t(scenario.beforeDescription)}</p>
+                    <p className="font-semibold">{t(scenario.beforeRisk)}</p>
                   </div>
                 </div>
-                <p className="text-sm md:text-base text-gray-200 leading-relaxed">
-                  {section.description}
-                </p>
-                <div className="space-y-3">
-                  <div className="inline-flex px-5 py-2 rounded-full border border-emerald-300 text-emerald-100 text-xs md:text-sm">
-                    {section.cta}
+
+                <div className="space-y-6">
+                  <h4 className="text-lg font-semibold text-gray-900 text-center md:text-left">
+                    {t(scenario.afterTitle)}
+                  </h4>
+                  <div className="space-y-4">
+                    <Image src={scenario.afterImage} alt={scenario.afterTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
+                    <Image src={scenario.afterDetail} alt={scenario.afterTitle.JP} width={600} height={400} className="w-full rounded-2xl" />
                   </div>
-                  {index === 0 && (
-                    <div className="block">
-                      <button
-                        onClick={() => document.getElementById('lineup')?.scrollIntoView({ behavior: 'smooth' })}
-                        className="px-6 py-2 rounded-full bg-emerald-400 text-black font-semibold text-sm hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/30"
-                      >
-                        {t({ JP: '商品を見る', EN: 'View Products' })}
-                      </button>
-                    </div>
-                  )}
+                  <div className="space-y-3 text-sm text-gray-800">
+                    <p>{t(scenario.afterDescription)}</p>
+                    <p className="font-semibold">{t(scenario.afterBenefit)}</p>
+                  </div>
                 </div>
               </div>
-              <div className={`relative ${imageOrder}`}>
-                <div className="absolute -inset-4 bg-emerald-300/15 blur-3xl" aria-hidden="true" />
-                <div className="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl">
-                  <Image src={section.image} alt={section.title as string} width={700} height={800} className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
-          )
-        })}
+
+              <p className="mt-10 text-center text-base font-semibold text-gray-900">
+                {t(scenario.footer)}
+              </p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -30,19 +30,19 @@ export default function LoadingScreen() {
         {/* Logo Animation */}
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto relative">
-            <div className="absolute inset-0 border-4 border-emerald-500/20 rounded-full"></div>
+            <div className="absolute inset-0 border-4 border-amber-500/20 rounded-full"></div>
             <div
-              className="absolute inset-0 border-4 border-emerald-500 rounded-full animate-spin"
+              className="absolute inset-0 border-4 border-amber-500 rounded-full animate-spin"
               style={{ borderTopColor: 'transparent', borderRightColor: 'transparent' }}
             ></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-emerald-400 font-bold text-2xl">MV</span>
+              <span className="text-amber-400 font-bold text-2xl">MV</span>
             </div>
           </div>
         </div>
 
         {/* Title */}
-        <h1 className="text-emerald-400 text-2xl font-bold mb-2 animate-pulse">
+        <h1 className="text-amber-400 text-2xl font-bold mb-2 animate-pulse">
           MOTHER VEGETABLES
         </h1>
         <p className="text-gray-400 text-sm mb-6">
@@ -53,11 +53,11 @@ export default function LoadingScreen() {
         <div className="w-64 mx-auto">
           <div className="bg-gray-800 rounded-full h-2 overflow-hidden">
             <div
-              className="bg-gradient-to-r from-emerald-500 to-emerald-400 h-full rounded-full transition-all duration-300 ease-out"
+              className="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full transition-all duration-300 ease-out"
               style={{ width: `${progress}%` }}
             ></div>
           </div>
-          <p className="text-emerald-400 text-sm mt-2">{progress}%</p>
+          <p className="text-amber-400 text-sm mt-2">{progress}%</p>
         </div>
 
         {/* Loading Text Animation */}
