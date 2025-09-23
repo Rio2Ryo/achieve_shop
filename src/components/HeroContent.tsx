@@ -13,11 +13,11 @@ export default function HeroContent() {
           <div className="max-w-4xl space-y-10">
             <div className="space-y-5 text-center">
               <h1 className="text-2xl font-black leading-tight md:text-3xl lg:text-4xl">
-                {t({ JP: 'たった5秒で、24時間崩れない陶器肌へ。', EN: 'Five Seconds Each Morning for 24-Hour Porcelain Skin.' })}
+                {t({ JP: 'たった5秒で、24時間清潔感のある肌へ', EN: 'Five Seconds for 24-Hour Fresh Skin' })}
               </h1>
               <p className="mx-auto max-w-xl text-sm text-gray-300 leading-relaxed md:text-base">
                 {t({
-                  JP: '素肌への自信が、あなたの美しさを解放する。35億年の生命力から誕生したマザーベジタブルが、陶器のような美しい肌を一日中キープします。',
+                  JP: '素肌への自信が、あなたの美しさを解放する。35億年の生命力から誕生したマザーベジタブルが、清潔感のある美しい肌を一日中キープします。',
                   EN: 'Confidence in bare skin unlocks your beauty. Mother Vegetables, born from 3.5 billion years of life force, keep a porcelain finish all day long.'
                 })}
               </p>

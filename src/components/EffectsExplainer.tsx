@@ -23,16 +23,16 @@ const scenarios: Scenario[] = [
   {
     id: 'daytime-shine',
     headline: {
-      JP: '「顔のテカリを消す」効果はマザベジパウダーならでは',
-      EN: 'Mother Veggie Powder Keeps Shine Out of Sight'
+      JP: '「顔のテカリを消す」効果はMother Vegetables Confidenceならでは',
+      EN: 'Mother Vegetables Confidence Keeps Shine Out of Sight'
     },
     beforeTitle: {
       JP: '皮脂の油分がある状態',
       EN: 'Skin Before Application'
     },
     afterTitle: {
-      JP: 'マザベジパウダー塗布後',
-      EN: 'After Mother Veggie Powder'
+      JP: 'Confidence塗布後',
+      EN: 'After Confidence'
     },
     beforeImage: '/doc1.jpg',
     beforeDetail: '/doc1-a.jpg',
@@ -55,8 +55,8 @@ const scenarios: Scenario[] = [
       EN: 'They absorb excess oil while holding moisture and provide antioxidant care—perfect for a five-second refresh before any meeting.'
     },
     footer: {
-      JP: 'さっと10秒滑らせるだけで清潔感ある印象に。日中のマストアイテム。',
-      EN: 'Glide for ten seconds to look composed—your daytime essential.'
+      JP: 'さっと5秒滑らせるだけで清潔感ある印象に。日中のマストアイテム。',
+      EN: 'Glide for five seconds to look composed—your daytime essential.'
     }
   },
 ]

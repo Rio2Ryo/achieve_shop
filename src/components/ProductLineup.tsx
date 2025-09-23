@@ -20,13 +20,12 @@ const catalog: CatalogItem[] = [
   {
     slug: 'standard-2000',
     image: '/item_pic2.jpg',
-    tag: { JP: '人気No.1', EN: 'Best Seller' },
-    name: { JP: 'スタンダードサイズ', EN: 'Standard Size' },
-    subtitle: { JP: '2,000mg / 約60日分', EN: '2,000 mg · ~60 days' },
+    tag: { JP: '', EN: '' },
+    name: { JP: 'パフケース スタンダードタイプ', EN: 'Standard Size' },
+    subtitle: { JP: '', EN: '' },
     bullets: [
       { JP: 'Mother Vegetables 2,000mg配合', EN: 'Mother Vegetables 2,000 mg blend' },
-      { JP: '約60日分のデイリーケア', EN: '~60 days of daily care' },
-      { JP: '携帯しやすいコンパクトケース', EN: 'Travel-ready compact case' }
+      { JP: '約60日分のデイリーケア', EN: '~60 days of daily care' }
     ],
     price: '¥3,600',
     note: { JP: '税込', EN: 'Tax included' },
@@ -36,13 +35,12 @@ const catalog: CatalogItem[] = [
   {
     slug: 'large-5000',
     image: '/item_pic3.jpg',
-    tag: { JP: '大容量', EN: 'Large' },
-    name: { JP: 'お得な大容量', EN: 'Value Large Pack' },
-    subtitle: { JP: '5,000mg / 約150日分', EN: '5,000 mg · ~150 days' },
+    tag: { JP: '', EN: '' },
+    name: { JP: 'パフケース ラージタイプ', EN: 'Value Large Pack' },
+    subtitle: { JP: '', EN: '' },
     bullets: [
       { JP: 'Mother Vegetables 5,000mg配合', EN: 'Mother Vegetables 5,000 mg blend' },
-      { JP: '約150日分のロングリミット', EN: '~150 days of long use' },
-      { JP: '上質なラグジュアリーケース', EN: 'Premium keepsake case' }
+      { JP: '約150日分のロングリミット', EN: '~150 days of long use' }
     ],
     price: '¥7,400',
     note: { JP: '税込', EN: 'Tax included' },
@@ -58,13 +56,12 @@ export default function ProductLineup() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-5xl space-y-12">
           <div className="space-y-4 text-center">
-            <p className="text-xs tracking-[0.35em] text-amber-300">PRODUCT LINEUP</p>
-            <h2 className="text-3xl md:text-4xl font-semibold text-white">
-              {t({ JP: '商品ラインナップ', EN: 'Mother Vegetables Confidence Products' })}
+            <h2 className="text-4xl md:text-5xl font-semibold text-amber-300">
+              {t({ JP: 'PRODUCTS', EN: 'PRODUCTS' })}
             </h2>
             <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-3xl mx-auto">
               {t({
-                JP: '使いやすいパフケースタイプと1回分の使用料がわかるバレットタイプをお選びください。',
+                JP: '使いやすいパフケースタイプと1回分の使用量がわかるバレットタイプをお選びください。',
                 EN: 'Choose between the daily-friendly standard set and the generous large pack—both available on the official store.'
               })}
             </p>

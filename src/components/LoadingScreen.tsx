@@ -28,21 +28,21 @@ export default function LoadingScreen() {
     <div className="fixed inset-0 z-[9999] bg-black flex items-center justify-center">
       <div className="text-center">
         {/* Logo Animation */}
-        <div className="mb-8">
-          <div className="w-32 h-32 mx-auto relative">
+        <div className="mb-6">
+          <div className="w-20 h-20 mx-auto relative">
             <div className="absolute inset-0 border-4 border-amber-500/20 rounded-full"></div>
             <div
               className="absolute inset-0 border-4 border-amber-500 rounded-full animate-spin"
               style={{ borderTopColor: 'transparent', borderRightColor: 'transparent' }}
             ></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-amber-400 font-bold text-2xl">MV</span>
+              <span className="text-amber-400 font-bold text-lg">MV</span>
             </div>
           </div>
         </div>
 
         {/* Title */}
-        <h1 className="text-amber-400 text-2xl font-bold mb-2 animate-pulse">
+        <h1 className="text-amber-400 text-xl font-bold mb-2 animate-pulse">
           MOTHER VEGETABLES
         </h1>
         <p className="text-gray-400 text-sm mb-6">

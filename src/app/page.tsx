@@ -6,10 +6,8 @@ import Hero from '@/components/Hero'
 import HeroContent from '@/components/HeroContent'
 import ProjectOverview from '@/components/ProjectOverview'
 import IndustryApproach from '@/components/IndustryApproach'
-import EffectsExplainer from '@/components/EffectsExplainer'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ProductLineup from '@/components/ProductLineup'
-import GuaranteeCTA from '@/components/GuaranteeCTA'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import LoadingScreen from '@/components/LoadingScreen'
@@ -35,10 +33,8 @@ export default function Home() {
         <HeroContent />
         <ProjectOverview />
         <IndustryApproach />
-        <EffectsExplainer />
         <BeforeAfterGallery />
         <ProductLineup />
-        <GuaranteeCTA />
         <FAQ />
         <Footer />
       </main>

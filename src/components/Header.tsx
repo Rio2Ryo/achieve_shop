@@ -10,11 +10,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { id: 'concept', label: t({ JP: 'コンセプト', EN: 'Concept' }) },
-    { id: 'features', label: t({ JP: '特長', EN: 'Highlights' }) },
-    { id: 'usage', label: t({ JP: '使い方', EN: 'Usage' }) },
-    { id: 'case', label: t({ JP: 'パフケース', EN: 'Puff Case' }) },
-    { id: 'lineup', label: t({ JP: '商品ラインナップ', EN: 'Lineup' }) },
+    { id: 'concept', label: 'Concept' },
+    { id: 'features', label: 'Features' },
+    { id: 'effects', label: 'Effects' },
+    { id: 'gallery', label: 'Before/After' },
+    { id: 'lineup', label: 'Products' },
     { id: 'faq', label: 'FAQ' }
   ]
 
@@ -63,19 +63,12 @@ export default function Header() {
             >
               {language === 'EN' ? 'EN' : 'JP'}
             </button>
-            <a
-              href="https://www.dotpb.jp/product-page/double-mvsi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:inline-flex px-4 md:px-5 py-2 text-xs md:text-sm border border-amber-300 text-amber-100 rounded-full hover:bg-amber-300/15 transition-colors"
-            >
-              {t({ JP: '公式ストア', EN: 'Official Store' })}
-            </a>
+            
             <button
               onClick={handlePurchase}
               className="px-4 md:px-6 py-2 text-xs md:text-sm bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-full transition-colors"
             >
-              {t({ JP: '購入する', EN: 'Purchase' })}
+              {t({ JP: 'Buy', EN: 'Buy' })}
             </button>
             <button
               onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -103,19 +96,12 @@ export default function Header() {
                 {item.label}
               </button>
             ))}
-            <a
-              href="https://www.dotpb.jp/product-page/double-mvsi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block px-5 py-3 text-left text-amber-200 border-b border-white/5 last:border-none hover:text-amber-100"
-            >
-              {t({ JP: '公式ストア', EN: 'Official Store' })}
-            </a>
+            
             <button
               onClick={handlePurchase}
               className="w-full px-5 py-3 text-left text-amber-100 hover:text-amber-200"
             >
-              {t({ JP: '購入する', EN: 'Purchase' })}
+              {t({ JP: 'Buy', EN: 'Buy' })}
             </button>
           </div>
         )}

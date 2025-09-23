@@ -10,28 +10,8 @@ const faqs = [
       EN: 'Can I use it on sensitive skin?'
     },
     answer: {
-      JP: 'はい。医薬部外品原料で敏感肌でも安心です。',
-      EN: 'Yes—its quasi-drug grade formula is gentle on sensitive skin.'
-    }
-  },
-  {
-    question: {
-      JP: 'いつ使えばいいですか？',
-      EN: 'When should I apply it?'
-    },
-    answer: {
-      JP: 'スキンケアの後ならいつでもOK。下地にも仕上げにも使えます。',
-      EN: 'Anytime after skincare—use it as a primer or a finishing step.'
-    }
-  },
-  {
-    question: {
-      JP: 'どのくらい持ちますか？',
-      EN: 'How long does one compact last?'
-    },
-    answer: {
-      JP: '1日1回の使用で1,500mgは約30日、2,000mgは約60日続きます。',
-      EN: 'With once-daily use: 1,500 mg lasts around 30 days and 2,000 mg about 60 days.'
+      JP: 'はい。敏感肌でも安心です。',
+      EN: 'Yes—its formula is gentle on sensitive skin.'
     }
   },
   {
@@ -50,18 +30,8 @@ const faqs = [
       EN: 'Are there any precautions?'
     },
     answer: {
-      JP: '傷や腫れがある部分には使わず、異常が出たら使用をやめ医師に相談してください。',
-      EN: 'Avoid broken or irritated skin and stop using if issues appear—consult a doctor.'
-    }
-  },
-  {
-    question: {
-      JP: '支払い方法と配送について教えてください。',
-      EN: 'What payment and delivery options are available?'
-    },
-    answer: {
-      JP: '公式ストアはクレジットカードと銀行振込に対応し、2営業日以内に発送します。',
-      EN: 'The official store accepts cards and bank transfer, shipping within two business days.'
+      JP: '異常が出たら使用をやめ医師に相談してください。',
+      EN: 'Stop using if issues appear—consult a doctor.'
     }
   },
   {
@@ -118,9 +88,8 @@ export default function FAQ() {
     <section id="faq" className="py-24 md:py-32 bg-black/90">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
-          <p className="text-sm tracking-[0.3em] text-amber-300 mb-4">FAQ</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            {t({ JP: 'よくあるご質問', EN: 'Frequently Asked Questions' })}
+          <h2 className="text-4xl md:text-5xl font-semibold text-amber-300 mb-4">
+            {t({ JP: 'FAQ', EN: 'FAQ' })}
           </h2>
           <p className="text-sm md:text-base text-gray-300">
             {t({
