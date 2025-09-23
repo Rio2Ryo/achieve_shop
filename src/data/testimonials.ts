@@ -17,7 +17,7 @@ export const testimonialCases: TestimonialCase[] = [
     ageLabel: { JP: '50代女性', EN: 'Female · 50s' },
     durationLabel: { JP: '3週間使用', EN: '3 weeks of use' },
     quote: {
-      JP: '年齢とともに頬のシミやクマが目立っていたのですが、使い始めてから肌がふんわり明るくなり、自信が戻りました。大人の肌でも無...',
+      JP: '年齢とともに頬のシミやクマが目立っていたのですが、使い始めてから肌がふんわり明るくなり、自信が戻りました。',
       EN: 'Age spots and dark circles used to stand out, but after three weeks my skin looks brighter and confidence returned.'
     },
     beforeNote: {
@@ -31,25 +31,6 @@ export const testimonialCases: TestimonialCase[] = [
   },
   {
     id: 2,
-    before: '/before2.jpg',
-    after: '/after2.jpg',
-    ageLabel: { JP: '20代女性', EN: 'Female · 20s' },
-    durationLabel: { JP: '1ヶ月使用', EN: '1 month of use' },
-    quote: {
-      JP: '頬の毛穴が引き締まり、赤みも落ち着きました。素肌がきれいになったみたいで、化粧直しの回数がぐっと減りました。毎日の必需品...',
-      EN: 'My pores tightened and redness calmed down. It feels like my bare skin improved, so I need far fewer touch-ups.'
-    },
-    beforeNote: {
-      JP: '毛穴の開きと赤みが強く、夕方にはテカリが気になる。',
-      EN: 'Noticeable pores and redness with visible shine toward evening.'
-    },
-    afterNote: {
-      JP: '毛穴が引き締まり、テカリを抑えたセミマットな肌に。ナチュラルな均一感が持続。',
-      EN: 'Refined pores and controlled shine deliver a semi-matte, even appearance throughout the day.'
-    }
-  },
-  {
-    id: 3,
     before: '/before3.jpg',
     after: '/after3.jpg',
     ageLabel: { JP: '80代女性', EN: 'Female · 80s' },

@@ -63,16 +63,6 @@ const faqs = [
       JP: '未開封で約3年、開封後は6ヶ月以内のご使用がおすすめです。',
       EN: 'Unopened lasts about three years; finish within six months after opening.'
     }
-  },
-  {
-    question: {
-      JP: '返品・返金はできますか？',
-      EN: 'What is your return policy?'
-    },
-    answer: {
-      JP: '到着後30日以内なら使用済みでも返金いたします。',
-      EN: 'We refund within 30 days of delivery—even if the product is used.'
-    }
   }
 ]
 
