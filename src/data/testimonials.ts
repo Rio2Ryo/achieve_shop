@@ -50,10 +50,10 @@ export const testimonialCases: TestimonialCase[] = [
   },
   {
     id: 3,
-    before: '/before3.jpg',
-    after: '/after3.jpg',
-    ageLabel: { JP: 'test代女性', EN: 'Female · 80s' },
-    durationLabel: { JP: '1ヶ月使用', EN: '1 month of use' },
+    before: '/before4.jpg',
+    after: '/after4.jpg',
+    ageLabel: { JP: '40代女性', EN: 'Female · 40s' },
+    durationLabel: { JP: '3日間使用', EN: '3 days of use' },
     quote: {
       JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
       EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
@@ -68,10 +68,10 @@ export const testimonialCases: TestimonialCase[] = [
     }
   },{
     id: 4,
-    before: '/before3.jpg',
-    after: '/after3.jpg',
-    ageLabel: { JP: 'testtest代女性', EN: 'Female · 80s' },
-    durationLabel: { JP: '1ヶ月使用', EN: '1 month of use' },
+    before: '/before5.jpg',
+    after: '/after5.jpg',
+    ageLabel: { JP: '10歳男性', EN: 'Male · 10 years old' },
+    durationLabel: { JP: '10日間使用', EN: '10 days of use' },
     quote: {
       JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
       EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
@@ -87,10 +87,10 @@ export const testimonialCases: TestimonialCase[] = [
   },
   {
     id: 5,
-    before: '/before3.jpg',
-    after: '/after3.jpg',
-    ageLabel: { JP: 'test代女性', EN: 'Female · 80s' },
-    durationLabel: { JP: '1ヶ月使用', EN: '1 month of use' },
+    before: '/before6.jpg',
+    after: '/after6.jpg',
+    ageLabel: { JP: '5歳男性', EN: 'Male · 5 years old' },
+    durationLabel: { JP: '2日間使用', EN: '2 days of use' },
     quote: {
       JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
       EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
@@ -105,10 +105,10 @@ export const testimonialCases: TestimonialCase[] = [
     }
   },{
     id: 6,
-    before: '/before3.jpg',
-    after: '/after3.jpg',
-    ageLabel: { JP: 'testtest代女性', EN: 'Female · 80s' },
-    durationLabel: { JP: '1ヶ月使用', EN: '1 month of use' },
+    before: '/before7.jpg',
+    after: '/after7.jpg',
+    ageLabel: { JP: '50代女性', EN: 'Female · 50s' },
+    durationLabel: { JP: '1日間使用', EN: '1 day of use' },
     quote: {
       JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
       EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
