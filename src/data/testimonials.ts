@@ -71,7 +71,7 @@ export const testimonialCases: TestimonialCase[] = [
     before: '/before5.jpg',
     after: '/after5.jpg',
     ageLabel: { JP: '10歳男性', EN: 'Male · 10 years old' },
-    durationLabel: { JP: '10日間使用', EN: '10 days of use' },
+    durationLabel: { JP: '9日間使用', EN: '9 days of use' },
     quote: {
       JP: 'ステロイドは避けたく、やさしいケアを継続。10日で粉ふきと赤みが和らぎ、見た目もすっきりしました。',
       EN: 'I want to avoid steroids and stick with gentle care. In 10 days, flaking and redness eased, and my skin looks cleaner.'
@@ -108,7 +108,7 @@ export const testimonialCases: TestimonialCase[] = [
     before: '/before7.jpg',
     after: '/after7.jpg',
     ageLabel: { JP: '50代女性', EN: 'Female · 50s' },
-    durationLabel: { JP: '1日間使用', EN: '1 day of use' },
+    durationLabel: { JP: '10時間使用', EN: '10 hours of use' },
     quote: {
       JP: '赤く腫れが引かず困っていましたが、就寝前に塗ると乾燥が和らぎ、翌朝は赤みが落ち着きました。',
       EN: 'The redness and swelling wouldn’t subside, but applying it before bed eased the dryness, and by morning the redness had calmed.'
