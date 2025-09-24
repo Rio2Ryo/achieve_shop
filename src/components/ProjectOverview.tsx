@@ -35,7 +35,7 @@ export default function ProjectOverview() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl space-y-20">
           <div className="space-y-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-semibold text-amber-300">Mother Vegetables Confidence</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-amber-300">MOTHER VEGETABLES CONFIDENCE</h2>
             <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-3xl mx-auto">
               {t({
                 JP: '35億年前の地球最初の生命「マザーベジタブル」に凝縮された地球の生命力がスキンパウダーになりました。"素肌が好きになる瞬間"を届けます。マザーベジタブルの生命力を閉じ込めた粒子が、清潔感と透明感、そして持続力を与えます。',
