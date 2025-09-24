@@ -61,6 +61,46 @@ export default function IndustryApproach() {
               
             </article>
           </div>
+
+          <div className="mx-auto max-w-5xl">
+            <article className="rounded-[32px] border border-white/10 bg-white/[0.04] p-8 md:p-12 text-white">
+              <h3 className="text-center text-xl md:text-2xl font-semibold text-white mb-8">
+                {t({ JP: 'すっぴんもトーンアップ', EN: 'Mother Vegetables Confidence Keeps Shine Out of Sight' })}
+              </h3>
+
+              <div className="grid gap-10 md:grid-cols-2">
+                <div className="space-y-6">
+                  <h4 className="text-lg font-semibold text-white text-center md:text-left">
+                    {t({ JP: 'シワや毛穴がある状態', EN: 'Skin Before Application' })}
+                  </h4>
+                  <div className="space-y-4">
+                    <Image src="/doc3.jpg" alt="シワや毛穴がある状態" width={300} height={200} className="w-full rounded-2xl" />
+                    <Image src="/doc3-a.png" alt="シワや毛穴がある状態" width={300} height={200} className="w-full rounded-2xl overflow-hidden" />
+                  </div>
+                  <div className="space-y-3 text-sm text-gray-300">
+                    <p>{t({ JP: '肌表面の油分が同じ方向に光を跳ね返し、テカリとして目立ちます。', EN: 'Oil on the surface reflects light in the same direction, so shine becomes visible.' })}</p>
+                    <p className="font-semibold">{t({ JP: '既存のケミカルパウダーは形状が均一なため、塗るとさらに光がまとまりテカリやすくなることも。', EN: 'Conventional straight-cut powders share identical shapes, bundling reflected light and amplifying shine.' })}</p>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <h4 className="text-lg font-semibold text-white text-center md:text-left">
+                    {t({ JP: 'Confidence塗布後', EN: 'After Confidence' })}
+                  </h4>
+                  <div className="space-y-4">
+                    <Image src="/doc4.jpg" alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
+                    <Image src="/doc4-b.jpg" alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
+                  </div>
+                  <div className="space-y-3 text-sm text-gray-300">
+                    <p>{t({ JP: 'Mother Vegetables由来の粒子はそれぞれ個性があり、当たった光を細かく散乱。テカリが艶のある透明感に変わります。', EN: 'Mother Vegetable particles are all slightly different, scattering light and leaving only a refined glow.' })}</p>
+                    <p className="font-semibold">{t({ JP: '潤いを抱えたまま余分な皮脂を吸着し、抗酸化ケアで肌も清潔に。デートや商談前の5秒タッチアップに最適です。', EN: 'They absorb excess oil while holding moisture and provide antioxidant care—perfect for a five-second refresh before any meeting.' })}</p>
+                  </div>
+                </div>
+              </div>
+
+              
+            </article>
+          </div>
         </div>
       </div>
     </section>
