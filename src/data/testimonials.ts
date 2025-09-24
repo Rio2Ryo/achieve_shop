@@ -55,7 +55,7 @@ export const testimonialCases: TestimonialCase[] = [
     ageLabel: { JP: '40代女性', EN: 'Female · 40s' },
     durationLabel: { JP: '3日間使用', EN: '3 days of use' },
     quote: {
-      JP: '処方クリームと一緒に使い始めて3日で、粉ふきが減り赤みも落ち着き、ざらつきやかゆみも和らぎました。手元の見た目が清潔になって自信が戻り、これからも続けたいです。',
+      JP: '処方クリームと一緒に使い始めて3日で、粉ふきが減り赤みも落ち着き、ざらつきやかゆみも和らぎました。これからも続けたいです。',
       EN: 'After 3 days with my prescribed cream, flaking and redness eased, roughness and itchiness faded—my hands look cleaner and I want to keep using it.'
     },
     beforeNote: {
@@ -73,16 +73,16 @@ export const testimonialCases: TestimonialCase[] = [
     ageLabel: { JP: '10歳男性', EN: 'Male · 10 years old' },
     durationLabel: { JP: '10日間使用', EN: '10 days of use' },
     quote: {
-      JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
-      EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
+      JP: 'ステロイドは避けたく、やさしいケアを継続。10日で粉ふきと赤みが和らぎ、見た目もすっきりしました。',
+      EN: 'I want to avoid steroids and stick with gentle care. In 10 days, flaking and redness eased, and my skin looks cleaner.'
     },
     beforeNote: {
-      JP: '腕や頬に複数の濃いシミがあり、くすみがち。',
-      EN: 'Multiple dark spots on the arms and cheeks give a dull impression.'
+      JP: '乾燥による粉ふきが所々にみられ、触れるとざらつきが強い。',
+      EN: 'Dryness caused patchy flaking, with a pronounced rough feel to the touch.'
     },
     afterNote: {
-      JP: 'シミが薄くなり、明度が均一に。ハリ感が戻り素肌に自信。',
-      EN: 'Spots look lighter, tone appears more even, and the skin regains a firmer look.'
+      JP: '赤みのコントラストが低下し、点状紅斑が薄く目立ちにくい。',
+      EN: 'Redness contrast decreased, and pinpoint erythema faded and became less noticeable.'
     }
   },
   {
