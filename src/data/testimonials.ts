@@ -55,7 +55,7 @@ export const testimonialCases: TestimonialCase[] = [
     ageLabel: { JP: '40代女性', EN: 'Female · 40s' },
     durationLabel: { JP: '3日間使用', EN: '3 days of use' },
     quote: {
-      JP: '処方クリームと一緒に使い始めて3日で、粉ふきが減り赤みも落ち着き、ざらつきやかゆみも和らぎました。これからも続けたいです。',
+      JP: '処方クリームと一緒に使い始めて3日で、粉ふきが減り赤みも減り、ざらつきやかゆみも和らぎました。これからも続けたいです。',
       EN: 'After 3 days with my prescribed cream, flaking and redness eased, roughness and itchiness faded—my hands look cleaner and I want to keep using it.'
     },
     beforeNote: {
@@ -92,16 +92,16 @@ export const testimonialCases: TestimonialCase[] = [
     ageLabel: { JP: '5歳男性', EN: 'Male · 5 years old' },
     durationLabel: { JP: '2日間使用', EN: '2 days of use' },
     quote: {
-      JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
-      EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
+      JP: '硬水の影響で手が荒れやすく、ハンドクリームと併用しました。ざらつきが減り、肌がなめらかになりました。',
+      EN: 'Hard water made his hands prone to irritation, so we used this alongside a hand cream. The roughness decreased and the skin felt smoother.'
     },
     beforeNote: {
-      JP: '腕や頬に複数の濃いシミがあり、くすみがち。',
-      EN: 'Multiple dark spots on the arms and cheeks give a dull impression.'
+      JP: '手首〜甲にかけて乾燥由来の赤みと粉ふきが点在。',
+      EN: 'Dryness-related redness and flaking appeared from the wrist to the back of the hand.'
     },
     afterNote: {
-      JP: 'シミが薄くなり、明度が均一に。ハリ感が戻り素肌に自信。',
-      EN: 'Spots look lighter, tone appears more even, and the skin regains a firmer look.'
+      JP: '全体として清潔感と均一感が向上し、写真で見てもツヤのある質感が回復。',
+      EN: 'Overall cleanliness and evenness improved, and a healthy-looking sheen returned—even in photos.'
     }
   },{
     id: 6,
