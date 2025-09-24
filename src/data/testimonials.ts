@@ -127,18 +127,18 @@ export const testimonialCases: TestimonialCase[] = [
     before: '/before8.jpg',
     after: '/after8.jpg',
     ageLabel: { JP: '50代女性', EN: 'Female · 50s' },
-    durationLabel: { JP: '1ヶ月使用', EN: '1 month of use' },
+    durationLabel: { JP: '2日間使用', EN: '2 days of use' },
     quote: {
-      JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
-      EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
+      JP: '火傷が1ケ月治りませんでしたが、夜に塗ると乾燥が和らぎ、48時間後には赤みも落ち着きました。',
+      EN: 'The burn hadn’t healed for a month, but applying it at night eased the dryness, and by 48 hours the redness had calmed.'
     },
     beforeNote: {
-      JP: '腕や頬に複数の濃いシミがあり、くすみがち。',
-      EN: 'Multiple dark spots on the arms and cheeks give a dull impression.'
+      JP: '腕の火傷の赤みと乾燥が約1か月間続き、治りが停滞。',
+      EN: 'Redness and dryness from an arm burn persisted for about a month, with healing stalled.'
     },
     afterNote: {
-      JP: 'シミが薄くなり、明度が均一に。ハリ感が戻り素肌に自信。',
-      EN: 'Spots look lighter, tone appears more even, and the skin regains a firmer look.'
+      JP: '見た目の清潔感が上がり、日常動作時の刺激感が少ない状態へ。',
+      EN: 'Appearance looked cleaner, with less irritation during everyday movements.'
     }
   }
 ]
