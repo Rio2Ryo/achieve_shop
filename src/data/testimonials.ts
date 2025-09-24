@@ -55,16 +55,16 @@ export const testimonialCases: TestimonialCase[] = [
     ageLabel: { JP: '40代女性', EN: 'Female · 40s' },
     durationLabel: { JP: '3日間使用', EN: '3 days of use' },
     quote: {
-      JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
-      EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
+      JP: '処方クリームと一緒に使い始めて3日で、粉ふきが減り赤みも落ち着き、ざらつきやかゆみも和らぎました。手元の見た目が清潔になって自信が戻り、これからも続けたいです。',
+      EN: 'After 3 days with my prescribed cream, flaking and redness eased, roughness and itchiness faded—my hands look cleaner and I want to keep using it.'
     },
     beforeNote: {
-      JP: '腕や頬に複数の濃いシミがあり、くすみがち。',
-      EN: 'Multiple dark spots on the arms and cheeks give a dull impression.'
+      JP: '点状の紅斑と細かな炎症性のブツブツが目立つ。',
+      EN: 'Noticeable pinpoint erythema and small inflammatory bumps.'
     },
     afterNote: {
-      JP: 'シミが薄くなり、明度が均一に。ハリ感が戻り素肌に自信。',
-      EN: 'Spots look lighter, tone appears more even, and the skin regains a firmer look.'
+      JP: '広範囲の粉ふき・炎症が大きく減少し、白っぽい剥離がほぼ見えない。',
+      EN: 'Extensive flaking and inflammation have greatly decreased, with the whitish peeling now barely visible.'
     }
   },{
     id: 4,
