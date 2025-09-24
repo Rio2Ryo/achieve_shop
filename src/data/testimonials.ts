@@ -121,5 +121,24 @@ export const testimonialCases: TestimonialCase[] = [
       JP: 'シミが薄くなり、明度が均一に。ハリ感が戻り素肌に自信。',
       EN: 'Spots look lighter, tone appears more even, and the skin regains a firmer look.'
     }
+  },
+  {
+    id: 6,
+    before: '/before8.jpg',
+    after: '/after8.jpg',
+    ageLabel: { JP: '50代女性', EN: 'Female · 50s' },
+    durationLabel: { JP: '1ヶ月使用', EN: '1 month of use' },
+    quote: {
+      JP: '濃かったシミが徐々に薄くなり、肌全体が均一な印象に。年齢を重ねても手をかければ肌は応えてくれると実感しました。',
+      EN: 'Dark spots gradually faded and my complexion evened out. With the right care, skin responds beautifully at any age.'
+    },
+    beforeNote: {
+      JP: '腕や頬に複数の濃いシミがあり、くすみがち。',
+      EN: 'Multiple dark spots on the arms and cheeks give a dull impression.'
+    },
+    afterNote: {
+      JP: 'シミが薄くなり、明度が均一に。ハリ感が戻り素肌に自信。',
+      EN: 'Spots look lighter, tone appears more even, and the skin regains a firmer look.'
+    }
   }
 ]
