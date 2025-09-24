@@ -2,7 +2,6 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { testimonialCases } from '@/data/testimonials'
-import { testimonialCases2 } from '@/data/testimonials2'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 
 export default function BeforeAfterGallery() {
@@ -63,7 +62,7 @@ export default function BeforeAfterGallery() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {testimonialCases2.map((item) => {
+          {testimonialCases.map((item) => {
             const quote = t(item.quote)
             const shortQuote = quote.length > 60 ? `${quote.slice(0, 60)}…` : quote
 
