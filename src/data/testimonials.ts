@@ -71,7 +71,7 @@ export const testimonialCases: TestimonialCase[] = [
     before: '/before5.jpg',
     after: '/after5.jpg',
     ageLabel: { JP: '10歳男性', EN: 'Male · 10 years old' },
-    durationLabel: { JP: '9日間使用', EN: '9 days of use' },
+    durationLabel: { JP: '10日間使用', EN: '10 days of use' },
     quote: {
       JP: 'ステロイドは避けたく、やさしいケアを継続。10日で粉ふきと赤みが和らぎ、見た目もすっきりしました。',
       EN: 'I want to avoid steroids and stick with gentle care. In 10 days, flaking and redness eased, and my skin looks cleaner.'
