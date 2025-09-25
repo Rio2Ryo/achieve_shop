@@ -62,7 +62,7 @@ export default function ProjectOverview() {
               alt="Mother Vegetables"
               width={400}
               height={200}
-              className="w-auto h-auto max-w-[400px] rounded-[32px] border border-white/10"
+              className="w-auto h-auto max-w-[250px] lg:max-w-[400px] rounded-[32px] border border-white/10"
             />
           </div>
         </div>

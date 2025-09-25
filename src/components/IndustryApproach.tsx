@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function IndustryApproach() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   return (
     <section id="features" className="bg-black border-t border-white/10 py-32">
@@ -34,7 +34,7 @@ export default function IndustryApproach() {
                     {t({ JP: '皮脂の油分がある状態', EN: 'Skin Before Application' })}
                   </h4>
                   <div className="space-y-4">
-                    <Image src="/doc1.jpg" alt="皮脂の油分がある状態" width={300} height={200} className="w-full rounded-2xl" />
+                    <Image src={language === 'EN' ? "/doc1en.jpg" : "/doc1.jpg"} alt="皮脂の油分がある状態" width={300} height={200} className="w-full rounded-2xl" />
                     <Image src="/doc1-a.png" alt="皮脂の油分がある状態" width={300} height={200} className="w-full rounded-2xl overflow-hidden" />
                   </div>
                   <div className="space-y-3 text-sm text-gray-300">
@@ -48,7 +48,7 @@ export default function IndustryApproach() {
                     {t({ JP: 'Confidence塗布後', EN: 'After Confidence' })}
                   </h4>
                   <div className="space-y-4">
-                    <Image src="/doc2.jpg" alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
+                    <Image src={language === 'EN' ? "/doc2en.jpg" : "/doc2.jpg"} alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
                     <Image src="/doc2-b.jpg" alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
                   </div>
                   <div className="space-y-3 text-sm text-gray-300">
@@ -75,7 +75,7 @@ export default function IndustryApproach() {
                   </h4>
                   <div className="space-y-4">
                     {/*<Image src="/doc3.jpg" alt="シワや毛穴がある状態" width={300} height={200} className="w-full rounded-2xl" />*/}
-                    <Image src="/doc3.jpg" alt="シワや毛穴がある状態" width={300} height={200} className="w-full rounded-2xl overflow-hidden" />
+                    <Image src={language === 'EN' ? "/doc3en.jpg" : "/doc3.jpg"} alt="シワや毛穴がある状態" width={300} height={200} className="w-full rounded-2xl overflow-hidden" />
                   </div>
                   <div className="space-y-3 text-sm text-gray-300">
                     <p>{t({ JP: '寝る前などのすっぴんの際はどうしてもシワや毛穴が目立ってしまいます。', EN: 'When bare-faced (e.g., before bed), lines and pores inevitably stand out.' })}</p>
@@ -89,7 +89,7 @@ export default function IndustryApproach() {
                   </h4>
                   <div className="space-y-4">
                     {/*<Image src="/doc4.jpg" alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />*/}
-                    <Image src="/doc4.jpg" alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
+                    <Image src={language === 'EN' ? "/doc4en.jpg" : "/doc4.jpg"} alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
                   </div>
                   <div className="space-y-3 text-sm text-gray-300">
                     <p>{t({ JP: '寝る前にも使えるMother Vegetablesは、シミや毛穴にも入り込んで目立たせません。', EN: 'Mother Vegetables, safe to use before bed, fills dark spots and pores to keep them less visible.' })}</p>

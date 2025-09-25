@@ -25,7 +25,7 @@ export default function Hero() {
           width={350}
           height={140}
           priority
-          className="w-auto h-auto max-w-[350px]"
+          className="w-auto h-auto max-w-[250px] lg:max-w-[350px]"
         />
         <div className="text-center space-y-4">
           <p className="text-lg md:text-xl font-light tracking-wider">For Skin</p>
