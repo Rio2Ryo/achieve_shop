@@ -39,7 +39,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <Image src="/mothervegetables_logo_white.png" alt="Mother Vegetables" width={100} height={40} />
+            <Image src="/mothervegetables_logo_white.png" alt="Mother Vegetable" width={100} height={40} />
           </div>
 
           <nav className="hidden md:flex flex-wrap items-center justify-center gap-3 lg:gap-5 text-sm">
