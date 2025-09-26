@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function ProjectOverview() {
   const { t } = useLanguage()

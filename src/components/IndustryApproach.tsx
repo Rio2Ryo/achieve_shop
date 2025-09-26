@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function IndustryApproach() {
   const { t, language } = useLanguage()
@@ -93,7 +93,7 @@ export default function IndustryApproach() {
                   </div>
                   <div className="space-y-3 text-sm text-gray-300">
                     <p>{t({ JP: '寝る前にも使えるMother Vegetableは、シミや毛穴にも入り込んで目立たせません。', EN: 'Mother Vegetable, safe to use before bed, fills dark spots and pores to keep them less visible.' })}</p>
-                    <p className="font-semibold">{t({ JP: '気になるところを隠しながらお肌を清潔に。またMother Vegetableは分かれているので「割れ」もありません。', EN: 'It conceals concerns while keeping skin clean, and its non-caking powder won't crack.' })}</p>
+                    <p className="font-semibold">{t({ JP: '気になるところを隠しながらお肌を清潔に。またMother Vegetableは分かれているので「割れ」もありません。', EN: "It conceals concerns while keeping skin clean, and its non-caking powder won't crack." })}</p>
                   </div>
                 </div>
               </div>

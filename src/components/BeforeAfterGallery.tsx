@@ -1,8 +1,8 @@
 'use client'
 
-import { useLanguage } from '@/contexts/LanguageContext'
-import { testimonialCases } from '@/data/testimonials'
-import BeforeAfterSlider from '@/components/BeforeAfterSlider'
+import { useLanguage } from '../contexts/LanguageContext'
+import { testimonialCases } from '../data/testimonials'
+import BeforeAfterSlider from './BeforeAfterSlider'
 
 export default function BeforeAfterGallery() {
   const { t } = useLanguage()
