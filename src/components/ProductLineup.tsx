@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 interface CatalogItem {
   slug: string
@@ -24,7 +24,7 @@ const catalog: CatalogItem[] = [
     name: { JP: 'パフケース スタンダードタイプ', EN: 'Standard Size' },
     subtitle: { JP: '', EN: '' },
     bullets: [
-      { JP: 'Mother Vegetables 2,000mg配合', EN: 'Mother Vegetables 2,000 mg blend' },
+      { JP: 'Mother Vegetable 2,000mg配合', EN: 'Mother Vegetable 2,000 mg blend' },
       { JP: '約60日分のデイリーケア', EN: '~60 days of daily care' }
     ],
     price: '¥3,600',
@@ -39,7 +39,7 @@ const catalog: CatalogItem[] = [
     name: { JP: 'パフケース ラージタイプ', EN: 'Value Large Pack' },
     subtitle: { JP: '', EN: '' },
     bullets: [
-      { JP: 'Mother Vegetables 5,000mg配合', EN: 'Mother Vegetables 5,000 mg blend' },
+      { JP: 'Mother Vegetable 5,000mg配合', EN: 'Mother Vegetable 5,000 mg blend' },
       { JP: '約150日分のロングリミット', EN: '~150 days of long use' }
     ],
     price: '¥7,400',

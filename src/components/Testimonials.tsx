@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
-import { testimonialCases } from '@/data/testimonials'
+import { useLanguage } from '../contexts/LanguageContext'
+import { testimonialCases } from '../data/testimonials'
 
 export default function Testimonials() {
   const { t } = useLanguage()

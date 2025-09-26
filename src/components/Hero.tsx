@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/hero-earth-regeneration-Dnk2z_VF.png"
-          alt="Mother Vegetables Confidence"
+          alt="Mother Vegetable Confidence"
           fill
           priority
           className="object-cover"
@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center gap-8">
         <Image
           src="/confidence_logo_touka.png"
-          alt="Mother Vegetables Confidence Logo"
+          alt="Mother Vegetable Confidence Logo"
           width={350}
           height={140}
           priority

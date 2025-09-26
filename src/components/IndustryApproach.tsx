@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function IndustryApproach() {
   const { t, language } = useLanguage()
@@ -25,7 +25,7 @@ export default function IndustryApproach() {
           <div className="mx-auto max-w-5xl">
             <article className="rounded-[32px] border border-white/10 bg-white/[0.04] p-8 md:p-12 text-white">
               <h3 className="text-center text-xl md:text-2xl font-semibold text-white mb-8">
-                {t({ JP: '顔のテカリが消える', EN: 'Mother Vegetables Confidence Keeps Shine Out of Sight' })}
+                {t({ JP: '顔のテカリが消える', EN: 'Mother Vegetable Confidence Keeps Shine Out of Sight' })}
               </h3>
 
               <div className="grid gap-10 md:grid-cols-2">
@@ -52,7 +52,7 @@ export default function IndustryApproach() {
                     <Image src="/doc2-b.jpg" alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
                   </div>
                   <div className="space-y-3 text-sm text-gray-300">
-                    <p>{t({ JP: 'Mother Vegetables由来の粒子はそれぞれ個性があり、当たった光を細かく散乱。テカリが艶のある透明感に変わります。', EN: 'Mother Vegetable particles are all slightly different, scattering light and leaving only a refined glow.' })}</p>
+                    <p>{t({ JP: 'Mother Vegetable由来の粒子はそれぞれ個性があり、当たった光を細かく散乱。テカリが艶のある透明感に変わります。', EN: 'Mother Vegetable particles are all slightly different, scattering light and leaving only a refined glow.' })}</p>
                     <p className="font-semibold">{t({ JP: '潤いを抱えたまま余分な皮脂を吸着し、抗酸化ケアで肌も清潔に。デートや商談前の5秒タッチアップに最適です。', EN: 'They absorb excess oil while holding moisture and provide antioxidant care—perfect for a five-second refresh before any meeting.' })}</p>
                   </div>
                 </div>
@@ -92,8 +92,8 @@ export default function IndustryApproach() {
                     <Image src={language === 'EN' ? "/doc4en.jpg" : "/doc4.jpg"} alt="Confidence塗布後" width={300} height={200} className="w-full rounded-2xl" />
                   </div>
                   <div className="space-y-3 text-sm text-gray-300">
-                    <p>{t({ JP: '寝る前にも使えるMother Vegetablesは、シミや毛穴にも入り込んで目立たせません。', EN: 'Mother Vegetables, safe to use before bed, fills dark spots and pores to keep them less visible.' })}</p>
-                    <p className="font-semibold">{t({ JP: '気になるところを隠しながらお肌を清潔に。またMother Vegetablesは分かれているので「割れ」もありません。', EN: 'It conceals concerns while keeping skin clean, and its non-caking powder won’t crack.' })}</p>
+                    <p>{t({ JP: '寝る前にも使えるMother Vegetableは、シミや毛穴にも入り込んで目立たせません。', EN: 'Mother Vegetable, safe to use before bed, fills dark spots and pores to keep them less visible.' })}</p>
+                    <p className="font-semibold">{t({ JP: '気になるところを隠しながらお肌を清潔に。またMother Vegetableは分かれているので「割れ」もありません。', EN: "It conceals concerns while keeping skin clean, and its non-caking powder won't crack." })}</p>
                   </div>
                 </div>
               </div>

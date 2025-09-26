@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useLanguage } from '@/contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function HeroContent() {
   const { t } = useLanguage()
@@ -18,7 +18,7 @@ export default function HeroContent() {
               <p className="mx-auto max-w-xl text-sm text-gray-300 leading-relaxed md:text-base">
                 {t({
                   JP: '素肌への自信が、あなたの美しさを解放する。35億年の生命力から誕生したマザーベジタブルが、清潔感のある美しい肌を一日中キープします。',
-                  EN: 'Confidence in bare skin unlocks your beauty. Mother Vegetables, born from 3.5 billion years of life force, keep a porcelain finish all day long.'
+                  EN: 'Confidence in bare skin unlocks your beauty. Mother Vegetable, born from 3.5 billion years of life force, keep a porcelain finish all day long.'
                 })}
               </p>
             </div>
@@ -26,7 +26,7 @@ export default function HeroContent() {
             <div className="relative w-full">
               <Image
                 src="/ms-banner.webp"
-                alt="Mother Vegetables"
+                alt="Mother Vegetable"
                 width={1200}
                 height={600}
                 className="w-full h-auto"

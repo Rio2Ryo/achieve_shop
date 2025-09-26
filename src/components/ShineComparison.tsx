@@ -1,7 +1,7 @@
 'use client'
 
 import { HiOutlineSun } from 'react-icons/hi'
-import { useLanguage } from '@/contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function ShineComparison() {
   const { t } = useLanguage()
