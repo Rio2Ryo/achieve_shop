@@ -10,7 +10,7 @@ interface CatalogItem {
   name: { JP: string; EN: string }
   subtitle: { JP: string; EN: string }
   bullets: { JP: string; EN: string }[]
-  price: string
+  price: { JP: string; EN: string }
   note: { JP: string; EN: string }
   url: string
   highlight?: boolean
@@ -18,32 +18,34 @@ interface CatalogItem {
 
 const catalog: CatalogItem[] = [
   {
-    slug: 'standard-2000',
+    slug: 'confidence-30days',
     image: '/item_pic2.jpg',
-    tag: { JP: '', EN: '' },
-    name: { JP: 'パフケース スタンダードタイプ', EN: 'Standard Size' },
-    subtitle: { JP: '', EN: '' },
+    tag: { JP: 'STANDARD', EN: 'STANDARD' },
+    name: { JP: 'Mother Vegetable Confidence 30days', EN: 'Mother Vegetable Confidence 30days' },
+    subtitle: { JP: '毎日の携帯に', EN: 'Carry it daily' },
     bullets: [
-      { JP: 'Mother Vegetable 2,000mg配合', EN: 'Mother Vegetable 2,000 mg blend' },
-      { JP: '約60日分のデイリーケア', EN: '~60 days of daily care' }
+      { JP: 'パフとパウダーが一体の30日セット', EN: 'Integrated puff and powder for 30 days' },
+      { JP: '商談前やオンライン会議の5秒リセットに', EN: 'Five-second reset before meetings or calls' },
+      { JP: '耳の後ろや首筋にも使いやすいコンパクト設計', EN: 'Compact design reaches behind ears and along the neck' }
     ],
-    price: '¥3,600',
-    note: { JP: '税込', EN: 'Tax included' },
+    price: { JP: '¥4,125', EN: '$27.50' },
+    note: { JP: '税込・送料無料', EN: 'Tax included · Free shipping' },
     url: 'https://mv-si002.dotpb.jp/item/mvsi/standard-mvsi',
     highlight: true
   },
   {
-    slug: 'large-5000',
+    slug: 'confidence-large',
     image: '/item_pic3.jpg',
-    tag: { JP: '', EN: '' },
-    name: { JP: 'パフケース ラージタイプ', EN: 'Value Large Pack' },
-    subtitle: { JP: '', EN: '' },
+    tag: { JP: 'LARGE', EN: 'LARGE' },
+    name: { JP: 'Mother Vegetable Confidence Large', EN: 'Mother Vegetable Confidence Large' },
+    subtitle: { JP: 'たっぷり使える大容量', EN: 'Large capacity for daily use' },
     bullets: [
-      { JP: 'Mother Vegetable 5,000mg配合', EN: 'Mother Vegetable 5,000 mg blend' },
-      { JP: '約150日分のロングリミット', EN: '~150 days of long use' }
+      { JP: '約150日分のロングリフィルセット', EN: 'Refill set for around 150 days' },
+      { JP: 'ギフトにも選べる上質パッケージ', EN: 'Premium packaging ready for gifting' },
+      { JP: '毎日使ってもCO₂削減に貢献', EN: 'Daily use contributes to CO₂ reduction' }
     ],
-    price: '¥7,400',
-    note: { JP: '税込', EN: 'Tax included' },
+    price: { JP: '¥8,250', EN: '$55.00' },
+    note: { JP: '税込・送料無料', EN: 'Tax included · Free shipping' },
     url: 'https://mv-si002.dotpb.jp/item/mvsi/large-mvsi'
   }
 ]
@@ -59,10 +61,10 @@ export default function ProductLineup() {
             <h2 className="text-4xl md:text-5xl font-semibold text-amber-300">
               {t({ JP: 'PRODUCTS', EN: 'PRODUCTS' })}
             </h2>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-3xl mx-auto whitespace-pre-line">
               {t({
-                JP: '使いやすいパフケースタイプと1回分の使用量がわかるバレットタイプをお選びください。',
-                EN: 'Choose between the daily-friendly standard set and the generous large pack—both available on the official store.'
+                JP: 'あなたのライフスタイルに合わせてセレクト。\n携帯に便利な30daysと、家やオフィスでじっくり使えるLargeをご用意。',
+                EN: 'Choose what fits your lifestyle:\nThe portable 30-day set for on-the-go, or the Large set for home and office use.'
               })}
             </p>
           </div>
@@ -103,7 +105,7 @@ export default function ProductLineup() {
 
                 <div className="space-y-1">
                   <p className={`text-2xl font-semibold ${product.highlight ? 'text-amber-200' : 'text-white'}`}>
-                    {product.price}
+                    {t(product.price)}
                   </p>
                   <p className="text-xs text-gray-400">{t(product.note)}</p>
                 </div>

@@ -12,12 +12,12 @@ export default function BeforeAfterGallery() {
       <div className="container mx-auto px-4 max-w-5xl space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-semibold text-amber-300">
-            {t({ JP: 'BEFORE & AFTER', EN: 'BEFORE & AFTER' })}
+            {t({ JP: 'CONFIDENCE STORIES', EN: 'CONFIDENCE STORIES' })}
           </h2>
-          <p className="mx-auto max-w-3xl text-sm md:text-base text-gray-300 leading-relaxed">
+          <p className="mx-auto max-w-3xl text-sm md:text-base text-gray-300 leading-relaxed whitespace-pre-line">
             {t({
-              JP: '1ヶ月足らずで驚くべき効果を実感。',
-              EN: 'Experience amazing results in less than a month.'
+              JP: '商談、デート、帰宅後のリフレッシュ――5秒のタッチアップが男の清潔感をどこまで変えるのか。実際に使った声をご紹介します。',
+              EN: 'Negotiations, date nights, the reset after coming home—see how a five-second touch-up transforms men\'s cleanliness.'
             })}
           </p>
         </div>
@@ -60,7 +60,6 @@ export default function BeforeAfterGallery() {
             )
           })}
         </div>
-
       </div>
     </section>
   )

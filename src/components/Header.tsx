@@ -10,10 +10,9 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { id: 'concept', label: 'Concept' },
-    { id: 'features', label: 'Features' },
-    { id: 'effects', label: 'Effects' },
-    { id: 'gallery', label: 'Before/After' },
+    { id: 'hero', label: 'Top' },
+    { id: 'concept', label: 'About' },
+    { id: 'features', label: 'Benefits' },
     { id: 'lineup', label: 'Products' },
     { id: 'faq', label: 'FAQ' }
   ]

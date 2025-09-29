@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Footer() {
@@ -21,9 +20,7 @@ export default function Footer() {
               info@dotpb.jp
             </a>
           </p>
-
         </div>
-
       </div>
       <div className="border-t border-white/10 py-4">
         <p className="text-center text-gray-500 text-xs">
